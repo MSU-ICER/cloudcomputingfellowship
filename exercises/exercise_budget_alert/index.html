@@ -12,7 +12,7 @@
         <link rel="prev" href="../azure_portal_walkthrough/">
       
       
-        <link rel="next" href="../exercise_using_the_cloud_to_summarize_and_visualize_data/">
+        <link rel="next" href="../exercise_create_storage_account/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>MSU Cloud Computing Fellowship: Costs and Budgets with Microsoft Azure - MSU Cloud Computing Fellowship</title>
+        <title>Setting up Budget Alerts - MSU Cloud Computing Fellowship</title>
       
     
     
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MSU Cloud Computing Fellowship: Costs and Budgets with Microsoft Azure
+              Setting up Budget Alerts
             
           </span>
         </div>
@@ -333,7 +333,7 @@
         
   
   <span class="md-ellipsis">
-    Exercise: Azure Portal Walk-through and Storage account creation
+    Azure Portal Walk-through
   </span>
   
 
@@ -362,7 +362,7 @@
           
   
   <span class="md-ellipsis">
-    MSU Cloud Computing Fellowship: Costs and Budgets with Microsoft Azure
+    Setting up Budget Alerts
   </span>
   
 
@@ -373,7 +373,7 @@
         
   
   <span class="md-ellipsis">
-    MSU Cloud Computing Fellowship: Costs and Budgets with Microsoft Azure
+    Setting up Budget Alerts
   </span>
   
 
@@ -412,6 +412,26 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercise_create_storage_account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a Storage Account
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -810,7 +830,7 @@
         
   
   <span class="md-ellipsis">
-    Helping to Understand the "computing" in cloud computing
+    The Computing in Cloud Computing
   </span>
   
 
@@ -896,25 +916,29 @@ delete a resource that you no longer need. </p>
 <p>For details about this service, see the <a href="https://learn.microsoft.com/en-us/azure/cost-management-billing/">Azure Cost Management + Billing documentation</a>.   This specific exercise works with budgets and assumes there is one in your resource group.  If you do not have a budget on your account, or if you'd like to create a new kind of budget please contact us and we will assist you.  However if you are comfortable with Azure concepts, see this advanced [Azure Budget Tutorial</p>
 <p><a href="https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets">https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets</a></p>
 <h3 id="steps-to-add-a-cost-alert-to-an-existing-budget-your-resource-group">Steps to add a  "cost alert" to an existing budget your resource group.</h3>
-<p><strong>Find the Premade Budget</strong>
-- Log into <a href="https://portal.azure.com">https://portal.azure.com</a>
-- You should see a single resource group, or be put into one automatically.<br />
-- Open your resource group if is not already
-- The left side bar had properties for the resource group. 
-- In the left side-bar, select "budgets" (scroll down)
-- You should see a single budget named with netid, like this "ccf23_sparty_budget"
-- Click on that budget
-- click 'edit budget' link near the top left
-- review the information</p>
-<p><strong>Add an 'alert' to that budget</strong>
-  - in the edit budget form, 
-  - alert condition: type = Actual
-  - enter 50 percent
-  - under action group, leave it as 'none' (alerts are different from actions)
-  - in email, put your preferred email address (I don't know if gmail etc will work)
-  - add a second email to inform the instructors for the cloud fellowship: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#105;&#108;&#108;&#115;&#112;&#97;&#116;&#64;&#109;&#115;&#117;&#46;&#101;&#100;&#117;">&#98;&#105;&#108;&#108;&#115;&#112;&#97;&#116;&#64;&#109;&#115;&#117;&#46;&#101;&#100;&#117;</a>
-  - select your preferred language, if it's available (the default is US English)
-  - click 'Save'</p>
+<p><strong>Find the Premade Budget</strong></p>
+<ul>
+<li>Log into <a href="https://portal.azure.com">https://portal.azure.com</a></li>
+<li>You should see a single resource group, or be put into one automatically.  </li>
+<li>Open your resource group if is not already</li>
+<li>The left side bar had properties for the resource group. </li>
+<li>In the left side-bar, select "budgets" (scroll down)</li>
+<li>You should see a single budget named with netid, like this "ccf23_sparty_budget"</li>
+<li>Click on that budget</li>
+<li>click 'edit budget' link near the top left</li>
+<li>review the information</li>
+</ul>
+<p><strong>Add an 'alert' to that budget</strong></p>
+<ul>
+<li>in the edit budget form, </li>
+<li>alert condition: type = Actual</li>
+<li>enter 50 percent</li>
+<li>under action group, leave it as 'none' (alerts are different from actions)</li>
+<li>in email, put your preferred email address (I don't know if gmail etc will work)</li>
+<li>add a second email to inform the instructors for the cloud fellowship: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#105;&#108;&#108;&#115;&#112;&#97;&#116;&#64;&#109;&#115;&#117;&#46;&#101;&#100;&#117;">&#98;&#105;&#108;&#108;&#115;&#112;&#97;&#116;&#64;&#109;&#115;&#117;&#46;&#101;&#100;&#117;</a></li>
+<li>select your preferred language, if it's available (the default is US English)</li>
+<li>click 'Save'</li>
+</ul>
 <p>You may add additional alerts if you want to be reminded at different thresholds of spending, e.g. 25%, 50%, 80%.   One advantage to setting a low threshold like 20% of your budget is to help you learn how much things cost or to be alerted if there are resources you've created but didn't realize they still existed or were costing anything.  </p>
 <hr />
 <p>I hope these instructions were clear but again, any questions please contact us using email or MS Teams.  </p>

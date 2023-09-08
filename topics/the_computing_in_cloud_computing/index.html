@@ -18,7 +18,7 @@
     
     
       
-        <title>Helping to Understand the "computing" in cloud computing - MSU Cloud Computing Fellowship</title>
+        <title>The Computing in Cloud Computing - MSU Cloud Computing Fellowship</title>
       
     
     
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Helping to Understand the "computing" in cloud computing
+              The Computing in Cloud Computing
             
           </span>
         </div>
@@ -329,7 +329,7 @@
         
   
   <span class="md-ellipsis">
-    Exercise: Azure Portal Walk-through and Storage account creation
+    Azure Portal Walk-through
   </span>
   
 
@@ -349,7 +349,27 @@
         
   
   <span class="md-ellipsis">
-    MSU Cloud Computing Fellowship: Costs and Budgets with Microsoft Azure
+    Setting up Budget Alerts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercises/exercise_create_storage_account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a Storage Account
   </span>
   
 
@@ -763,7 +783,7 @@
           
   
   <span class="md-ellipsis">
-    Helping to Understand the "computing" in cloud computing
+    The Computing in Cloud Computing
   </span>
   
 
@@ -774,7 +794,7 @@
         
   
   <span class="md-ellipsis">
-    Helping to Understand the "computing" in cloud computing
+    The Computing in Cloud Computing
   </span>
   
 
@@ -812,7 +832,7 @@
         
           <li class="md-nav__item">
   <a href="#stack-model-of-computing" class="md-nav__link">
-    "Stack Model" of computing:
+    "Stack Model" of computing.
   </a>
   
 </li>
@@ -922,7 +942,7 @@
         
           <li class="md-nav__item">
   <a href="#stack-model-of-computing" class="md-nav__link">
-    "Stack Model" of computing:
+    "Stack Model" of computing.
   </a>
   
 </li>
@@ -989,7 +1009,9 @@
 
 
 <h1 id="helping-to-understand-the-computing-in-cloud-computing">Helping to Understand the "computing" in cloud computing</h1>
+<p><img alt="" src="../../img/header_image_old_corp_network_diagram.jpg" /></p>
 <p>You come to us with a unique set of experiences with computing, with more or less experience depending on your previous needs.  A challenge we have seen, for the many years we've been helping people, is understanding the context of computing in their research to understand the tools they have available.    </p>
+<p>In fact most documentation for cloud computing assumes you know the world of computing.   <a href="https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/">An introduction to cloud computing from microsoft</a> lists this  Prerequisite: "Basic familiarity with IT terms and concepts."  It turns out 'basic' can mean a lot of things.</p>
 <p><strong>A core goal of the MSU Cloud Computing Fellowship is to help you connect cloud computing to your research in a meaningful way</strong></p>
 <p>our original question: 
 - How can <em>cloud computing</em> benefit help your research?</p>
@@ -999,7 +1021,7 @@
   That is, could cloud computing enable me to use computing I otherwise couldn't?</p>
 <p>You may already have an idea of what this is, and experience with computing but many who come to us know it's valuable but are ready to learn why.  </p>
 <h2 id="what-is-computing-minimal-vocabulary">What is computing? Minimal Vocabulary</h2>
-<p>Cloud computing was invented for, and is marketed to IT systems administrators, software developers, and IT/technology managers.  See the history of AWS.   It is was not designed with researchers in mind.    Note, however, that Cloud Computing is general enough and is often marketed to researchers or 'for research.'  </p>
+<p>Cloud computing was invented for, and is marketed to IT systems administrators, software developers, and IT/technology managers.  See the history of AWS.   It is was not designed with researchers in mind.   Most training and documentation  Note, however, that Cloud Computing is general enough and is often marketed to researchers or 'for research.'  </p>
 <p>The primary function of cloud computing is to provide "infrastructure" aka the "back-end" or back room of a company's IT department, so we ware going to learn about that.  In fact, cloud computing is frequently defined, named, and sold based on abstractions of physical components of computers and IT infrastructure.    Hence learning more about IT infrastructure, or "computing" may be helpful understanding the context in which cloud computing is engineered.  This can help you determin what you may need from cloud computing to get your research done.   </p>
 <p>Could you purchase your own infrastructure (computers, networks, disks, etc) and run it "on-premise" and get the same benefit as cloud computing?  Or have your institution do that?  Sometimes yes!  The MSU HPCC is a great example when on-premise is more beneficial and cost-effective than cloud computing.   </p>
 <h2 id="about-computing-major-components-of-computer">About Computing: Major components of computer</h2>
@@ -1017,7 +1039,8 @@
 </ul>
 <p>Where is the data in this abstraction of computer infrastructure? Answer: everywhere</p>
 <p>If you hadn't thought or known about the components of a computer, that's no mistake.   Most people don't know the details of how their car operates, how to change their oil, or diff between carburetor and turbo charging?</p>
-<h3 id="stack-model-of-computing">"Stack Model" of computing:</h3>
+<h3 id="stack-model-of-computing">"Stack Model" of computing.</h3>
+<p>Just as in Science and the humanities, we need a model and terminology to talk about a subject.  A standard IT model of a computer is a 'stack' model, where each upper layer depends upon the layers below.   Most models of cloud computers build upon this simple model.  </p>
 <table border="0">
 <tr><td align="center">User</td></tr>
 <tr><td align="center">Interface/Connection</td></tr>
@@ -1038,6 +1061,7 @@
  - the form the input message can take, and the form of the message that is returned is known as the API of the server.  it's the interface that you have to work with. 
  - port: a computer may run many servers for internal and external use.  Unix devised a system of numbered 'ports' (nbumber 01 to 64K), and when running a server you must tell the server which port to listen for messages.  Users of most software never have to know or think about ports.  </p>
 <p>The 'Client/server' model invented in the 60s is so successful that we use servers for our daily lives and don't think about it (except when the server is down).  This model of computing is important because it's at the basis for of cloud computing.  </p>
+<p>We often think of a server as a box, but in the model above, the server is in the software layer, but each of layers below provides services for that software to exchange messages with another computer.   If you can abstract, virtualize or automate the layers below, it becomes much easier to provision servers than to purchase, install and configure physical hardware.   </p>
 <h3 id="example-server">Example Server</h3>
 <p>A Web server is a well known, easy to use, and very useful server to run.  The terms above translate as follows:</p>
 <ul>
@@ -1071,6 +1095,7 @@
 <li>designing efficient, robust, and secure networks is a major resource drain</li>
 </ul>
 <p>Why do I think this is important?  not only can you make a server (web, data, cluster, etc with cloud but everything you interact with in cloud is a server.  You will see many services dedicated to networking in the cloud.  </p>
+<p>On our campus, the network is managed by the institution, and it is configured to block all incomming traffic to prevent anyone from running a server which is a security risk. </p>
 <h2 id="too-much-hardware-virtualization-to-the-rescue">Too much hardware? Virtualization to the rescue</h2>
 <p>If you run a big IT Department that services 1000s of people, you need a lot of servers.   Each server can only handle a certain amount of 'traffic.'  Hence there are many methods for connecting multiple servers to act as one big server.  Each physical machine requires 1) installation 10) maintainence.  </p>
 <ul>
