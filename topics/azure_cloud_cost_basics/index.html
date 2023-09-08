@@ -16,7 +16,7 @@
     
     
       
-        <title>Introduction to the 2023-24 MSU Cloud Computing Fellowship - MSU Cloud Computing Fellowship</title>
+        <title>Intro to Cloud Costs on Azure - MSU Cloud Computing Fellowship</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-the-2023-24-msu-cloud-computing-fellowship" class="md-skip">
+        <a href="#intro-to-cloud-costs-on-azure" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to the 2023-24 MSU Cloud Computing Fellowship
+              Intro to Cloud Costs on Azure
             
           </span>
         </div>
@@ -232,7 +232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,70 +348,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#welcome" class="md-nav__link">
-    Welcome!
+  <a href="#video-walk-through-of-azure-cost-analysis" class="md-nav__link">
+    Video Walk-through of Azure Cost Analysis
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activities" class="md-nav__link">
-    Activities:
+  <a href="#details-about-costs-in-azure" class="md-nav__link">
+    Details about Costs in Azure
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introductions" class="md-nav__link">
-    Introductions
-  </a>
-  
-    <nav class="md-nav" aria-label="Introductions">
+    <nav class="md-nav" aria-label="Details about Costs in Azure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#msu-cloud-computing-fellowship-team" class="md-nav__link">
-    MSU Cloud Computing Fellowship Team
-  </a>
-  
-    <nav class="md-nav" aria-label="MSU Cloud Computing Fellowship Team">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#participant-introductions-discussion" class="md-nav__link">
-    Participant Introductions &amp; Discussion
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fellowship-program-overview" class="md-nav__link">
-    Fellowship Program Overview
-  </a>
-  
-    <nav class="md-nav" aria-label="Fellowship Program Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#program-synopsis" class="md-nav__link">
-    Program synopsis:
+  <a href="#1-pricing-pages" class="md-nav__link">
+    1. Pricing Pages.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#goals" class="md-nav__link">
-    Goals
+  <a href="#2-build-something-and-check-the-cost" class="md-nav__link">
+    2. Build something and check the cost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pricing-calculators" class="md-nav__link">
+    3. Pricing Calculators
   </a>
   
 </li>
@@ -422,29 +389,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-cloud-computing" class="md-nav__link">
-    Introduction to Cloud Computing
+  <a href="#summary-and-other-notes" class="md-nav__link">
+    Summary and other notes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hands-on-using-the-azure-portal" class="md-nav__link">
-    Hands-on: Using the Azure Portal
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#questions-and-discussion" class="md-nav__link">
-    Questions and Discussion
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#readings" class="md-nav__link">
-    Readings
+  <a href="#azure-pricing-resources" class="md-nav__link">
+    Azure Pricing Resources
   </a>
   
 </li>
@@ -464,129 +417,49 @@
                   
 
 
-<h1 id="introduction-to-the-2023-24-msu-cloud-computing-fellowship">Introduction to the 2023-24 MSU Cloud Computing Fellowship</h1>
-<figure>    
-  <img src="../img/rosie_facing_the_atlantic_clouds_psbills_2021.gif" /
-  <figcaption><em>You don't have to face the clouds alone</em></figcaption>
-</figure>
-
-<h2 id="welcome">Welcome!</h2>
-<p>This is the first 'session' of the MSU Cloud Computing Fellowship (CCF) for 2022-2023.  For a description of the program and how sessions are organized, see the <a href="../../">CCF home page</a></p>
-<p>The goals of this introductory session are to orient you to this program, introduce ourselves to each other, provide some background on cloud computing, set up our technology, and discuss what all of our expectations are.  </p>
-<h2 id="activities">Activities:</h2>
-<p><strong>Introduce yourself on Microsoft Teams</strong></p>
-<p>You should have all been given access to a Team "MSU ICER Cloud Computing Fellowship" via your NetID.    </p>
+<h1 id="intro-to-cloud-costs-on-azure">Intro to Cloud Costs on Azure</h1>
+<p>You've heard us say that nearly everything Azure has a cost, but how can you tell how much? </p>
+<p><em>First, Cautionary Tale</em>: <a href="https://medium.com/@ikunalv/google-cloud-charged-me-1000-for-this-mistake-25a313412a1f">Google Cloud Charged Me $1000 For This Mistake</a> by Kunal Vaidya on Medium.   *tl;dr: he forgot to turn off a service even though he was no longer using it.   Good news it, Google does grant 1-time forgiveness if you can prove you are using the service to learn about it (e.g. you are student). *</p>
+<h2 id="video-walk-through-of-azure-cost-analysis">Video Walk-through of Azure Cost Analysis</h2>
+<p>The following video walks through how to use the costs analysis features of the Azure portal for your resource group. <br />
+    1) It helps to understand <a href="#">Azure Organization</a>, and 
+    2) it is from a few years ago so the screens may look a little different</p>
+<p><a href="https://mediaspace.msu.edu/media/Short+Demonstration+of+Azure+Cost+Analysis/1_puhs4749"><img alt="Cost Analysis Video" src="../../img/CostAnalysisVideoTitle.jpg" /></a> </p>
+<p><em>Short video (3:30) Demonstrating Azure Portal Cost Analysis, on MSU MediaSpace (log-in required)</em></p>
+<h2 id="details-about-costs-in-azure">Details about Costs in Azure</h2>
+<p>The content below assumes you have knowledge of how to use the Azure Portal, basic cloud operations, what a virtual machine is. See the links and materials for <a href="../../sessions/01_introduction/">session 01</a> for the necessary background. </p>
+<h3 id="1-pricing-pages">1. Pricing Pages.</h3>
+<p>All cloud vendors have pricing pages that describe how they meter and charge for services.  For Azure this is <a href="https://azure.microsoft.com/en-us/pricing/#product-pricing">https://azure.microsoft.com/en-us/pricing/#product-pricing</a></p>
+<p>However I usually find the page I need quickly by simply googling <code>azure &lt;service name&gt; pricing</code> for example I wanted to see how much a static IP address costs in azure so <a href="https://www.google.com/search?q=azure+static+ip+pricing">googling 'azure static ip pricing'</a> takes me to <a href="https://azure.microsoft.com/en-us/pricing/details/ip-addresses/">https://azure.microsoft.com/en-us/pricing/details/ip-addresses/</a></p>
+<p>Some of these pages are  straightforward, but like the one above has addition knowledge.  What does this mean in practice?  For example, what does "classic" vs "ARM" even means? There is a link at the top of the page but this may take time to read and understand.  I'll tell you that we will never use 'classic' and only use 'resource manager (ARM).' so look at the ARM Prices.</p>
+<p>This kind of background info is very common for services.  </p>
+<h3 id="2-build-something-and-check-the-cost">2. Build something and check the cost</h3>
+<p>The other option is the empircal method: build something, use it, review the costs, and estimate.  </p>
+<p>At the resource group in the protal ( see  <a href="../azure_organization/">Azure Organization</a>), there is a link on the left-side menu, near the bottom labelled "Cost Analysis"   - click that</p>
+<p>This is a live report of your current costs, with the ability to filter by time period, resource type, tags, and other things.   </p>
+<p>Near the middle are rouded buttons controlling the view you see.   At the right side of this is a button "Add Filter"  which you can click to show costs only for some resources.  For example if you click that and select "Service Name" and then "virtual machines" you will see the costs for the current month. </p>
+<p>A powerful filtering technique is to use tagging in Azure, which is akin to adding meta-data to resources.   See the <a href="../../cloud_glossary/#tags">Cloud Glossary</a> </p>
+<p>In many of the filtering mechanisms in Azure (including costs), the tag names (keys) use use are listed in the options for filtering.    </p>
+<p>Carefully select the date range for which you want an estimate, especially if your trial run started a few days ago in the previous month as the default is a monthly estimate.  Use a custom date range for the time period that makes sense for the costs you want to observe. </p>
+<p><a href="../../img/screenshot_azure_portal_cost_analysis_by_tag.png"><img alt="Example Azure Cost Analysis Screen, filtered by Tag" src="screenshot_azure_portal_cost_analysis_by_tag.png" /></a>
+<em>Example Azure Cost Analysis Screen, filtered by Tag.  Click for larger view</em></p>
+<h3 id="3-pricing-calculators">3. Pricing Calculators</h3>
+<p>All the cloud companies have pricing calculators and they may be good for very rough estimates but I always multiple by 1.2 as I'm sure I missed some crucial resource that I didn't know I needed or didn't know costs money.  </p>
+<p>For Azure it's <a href="https://azure.microsoft.com/en-us/pricing/calculator/">https://azure.microsoft.com/en-us/pricing/calculator/</a></p>
+<h2 id="summary-and-other-notes">Summary and other notes</h2>
+<p>Combining these three methods is how we can estimate costs. </p>
+<p>Notes: </p>
 <ul>
-<li>Please log in to Teams (via the web <a href="https://teams.microsoft.com/">https://teams.microsoft.com/</a> or using the Teams client)</li>
-<li>Post a new message in the "general" channel just saying "hello" and include your name, department and how you prefer to be addressed.   </li>
-<li>If necessary MSU IT has documentation about MS Teams here:  <a href="https://tech.msu.edu/technology/collaborative-tools/spartan365/">https://tech.msu.edu/technology/collaborative-tools/spartan365/</a>  ( the link on that page requires yet another MSU log-in)</li>
-</ul>
-<p><strong>Confirm Access to Azure Portal</strong></p>
-<ul>
-<li>Go to <a href="https://portal.azure.com">https://portal.azure.com</a>.</li>
-<li>Log in with your MSU netid and password.</li>
-<li>Ensure you can access the Azure main web "portal."  </li>
-<li>You don't need to (and shouldn't) create any new resources or work with this website; simply confirm you have access.   You may see a list of "resources" and will introduce Azure during our first meeting. </li>
-</ul>
-<h2 id="introductions">Introductions</h2>
-<h3 id="msu-cloud-computing-fellowship-team">MSU Cloud Computing Fellowship Team</h3>
-<ul>
-<li>Dr. Brian O'Shea, Director, <a href="https://icer.msu.edu">MSU Institute for Cyber-Enabled Research</a> (ICER), Professor, Physics</li>
-<li>Dr. Mahmoud Parvizi, Co-Instructor<ul>
-<li>Research Consultant and Software Engineer, Institute for Cyber Enabled Research</li>
-<li>Participant in first Fellowship cohort</li>
-<li>Manager of ICER Training</li>
-</ul>
+<li>
+<p>Pricing often depends on the location or region you select.  Most regions in the US are the same price.   </p>
 </li>
-<li>Patrick Bills, Co-Instructor<ul>
-<li>Research Software Engineer,  Institute for Cyber Enabled Research. </li>
-</ul>
-</li>
-<li>Brad Fears, Contributor, MSU IT Services Research Cyber Infrastructure (IT RCI)<ul>
-<li>IT support staff with certification in AWS and Azure</li>
-</ul>
+<li>
+<p>Data transfer costs are really hard to estimate.   Transfer into the cloud (Ingress) is often free but out of the cloud (egress) usually has a charge.  This is because companies with web products *(e.g. websites, web stores, image sites, etc) make money when customers view their pages (more customers =&gt; more costs =&gt;but more revenue).  However note that MSU has a deal with Azure and data transfer from Azure to MSU is (mostly) free.   One way to mitigate data transfer costs in Research is to transfer large data inputs into azure, but only take out the smaller output (results, summaries).  </p>
 </li>
 </ul>
-<p>Sponsored by ICER, MSU Office of Research and Innovation (ORI), and MSU IT Services Research Cyberinfrastructure (RCI) </p>
-<h4 id="participant-introductions-discussion">Participant Introductions &amp; Discussion</h4>
-<ul>
-<li>About you: your preferred name and pronouns, which degree program or department if faculty. </li>
-<li>2 minute research synopsis and methods</li>
-<li>Previous experience with reseach computing including cloud computing (if any)</li>
-<li>Current research computing hurdles, roadblocks, challenges &amp; triumphs</li>
-<li>Which aspect of cloud computing are you most interested in learning and using to support your research?</li>
-</ul>
-<h2 id="fellowship-program-overview">Fellowship Program Overview</h2>
-<h4 id="program-synopsis">Program synopsis:</h4>
-<ul>
-<li>Fall semester materials, activities, seminars and discussions (Pat Bills):    <ul>
-<li>Goal, scope and expectation;</li>
-<li>structure (pre-session materials and activities, "textbook");</li>
-<li>in-person meeting approx bi-weekly and excluding holidays;</li>
-<li>our expectations.</li>
-</ul>
-</li>
-<li>Winter/Spring semester Projects (Mahmoud Parvizi):<ul>
-<li>Goal, scope and expectation;</li>
-<li>Proposal write-up and presentation early January;</li>
-<li>Check-points to discuss progress and hurdles</li>
-<li>Office hours &amp; help</li>
-<li>Final presentation during Symposium late april</li>
-</ul>
-</li>
-</ul>
-<p>Review the  "<a href="../../">syllabus</a>" on the home page of this website for the schedule</p>
-<h4 id="goals">Goals</h4>
-<p><strong>Help you get an understanding of:</strong></p>
-<ul>
-<li>what is cloud computing?</li>
-<li>what is cloud computing useful for? </li>
-<li>when should it use it for my research computing?</li>
-<li>how can I use it?</li>
-<li>Understanding of the context of the technology we are learning about.   </li>
-</ul>
-<p><strong>Help you get some practical experience</strong></p>
-<ul>
-<li>apply cloud to some aspect of your own research</li>
-<li>apply cloud to generic/canned research-like problem</li>
-</ul>
-<p><strong>Non-Goals:</strong>
- - cover all aspects of cloud - we don't cover networks for example due to time constraints
- - prepare you for a cloud computing certification (there are many existing resources for that)
- - become experts in everything cloud
- - build a dot-com empire</p>
-<h2 id="introduction-to-cloud-computing">Introduction to Cloud Computing</h2>
-<ul>
-<li><a href="../../topics/the_computing_in_cloud_computing/">The Computing in Cloud Computing</a></li>
-<li><a href="../../topics/intro_aspects_of_cloud_computing/">Aspects of Cloud Computing</a></li>
-<li><a href="../../topics/introduction_to_azure/">Introduction to Azure</a></li>
-<li><a href="./azure_organization.md">Azure Organization</a></li>
-<li><a href="../../topics/learning_how_to_learn_about_cloud/">Learning how to learn about cloud</a></li>
-</ul>
-<h2 id="hands-on-using-the-azure-portal">Hands-on: Using the Azure Portal</h2>
-<ol>
-<li><a href="../../exercises/azure_portal_walkthrough/">Interacting with Azure using the Portal web interface</a></li>
-<li><a href="budget_alert.md">Setting a Budget Alert Using the Azure Portal</a></li>
-</ol>
-<h2 id="questions-and-discussion">Questions and Discussion</h2>
-<ul>
-<li>What things are at the top of your mind as you begin this program?  </li>
-<li>Which of these topics resonates with your previous experience using computing or cloud computing (if any)?</li>
-</ul>
-<h2 id="readings">Readings</h2>
-<ul>
-<li>The <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf">NIST definition of cloud computing</a> </li>
-<li><a href="https://en.wikipedia.org/wiki/Cloud_computing">Wikipedia article on cloud computing</a> is actually pretty good</li>
-<li><a href="https://s3.us-east-2.amazonaws.com/a-book/Orienting.html">Chapter 1: Orienting in the cloud universe</a> <br>from <strong>"Cloud Computing for Science and Engineering", Foster and Gannon</strong><br />
-     ( <em><a href="https://mitpress.ublish.com/ereader/239/?preview#page/1">Alternative link to publisher preview chapter</a></em>  )</li>
-<li><a href="../../references/DRAFT_cloud_computing_for_academic_research_parvizi_2021.pdf">Using Cloud Computing for Academic Research</a>, Mahmoud Parvizi (draft version).   </li>
-</ul>
-<p>## Optional Readings
-  - Optional Historical Note <a href="https://www.technologyreview.com/2011/10/31/257406/who-coined-cloud-computing/">Who Coined 'Cloud Computing'?</a> by Antonio Regalado, October 2011, MIT Technology Review</p>
-<ul>
-<li>Optional [M. Armbrust et al. "Above the Clouds: A Berkeley View of Cloud Computing. Technical Report UCB/EECS-2009-28 "University of California at Berkeley, Electrical Engineering and Computer Sciences, 2009 PDF](<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.pdf">https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.pdf</a>} <br>
-   Written only 3 years after the launch of AWS, this is very insightful discussion of the value of cloud computing</li>
-</ul>
+<h2 id="azure-pricing-resources">Azure Pricing Resources</h2>
+<p><a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis">Quickstart: Explore and analyze costs with cost analysis</a></p>
+<p>Video from John Saville on cost estimation including the pricing calculator: <a href="https://www.youtube.com/watch?v=rMKmbZ1SYQg">Master the Azure Pricing Calculator Jun 17, 2021</a></p>
 
 
 
