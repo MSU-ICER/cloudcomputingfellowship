@@ -338,6 +338,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cloud-shell" class="md-nav__link">
+    Cloud Shell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#containers" class="md-nav__link">
     Containers
   </a>
@@ -639,7 +646,7 @@
         
   
   <span class="md-ellipsis">
-    Exercise: using the cloud to summarize and visualize data.
+    Session 3 exercise - analyzing data on a VM
   </span>
   
 
@@ -659,7 +666,7 @@
         
   
   <span class="md-ellipsis">
-    Storage pricing exercise
+    None
   </span>
   
 
@@ -1122,6 +1129,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cloud-shell" class="md-nav__link">
+    Cloud Shell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#containers" class="md-nav__link">
     Containers
   </a>
@@ -1304,6 +1318,8 @@
 Azure calls there object cloud storage "Blobs".  It is similar to Amazon Web Service 'S3' and Google cloud storage buckets.   Azure Documentation: <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction">Introduction to Azure Blob storage</a>  While it's possible to 'mount' blob storage to linux VMs using 'blob fuse' or similar packages, it can not work as you may expect and so in practice Azure Files are a better solution for that. See <a href="#file-storage-azure">File Storage</a></p>
 <h4 id="client-server">Client-Server</h4>
 <p>Client/Server model of computing is something we use everyday but perhaps dont' use this term.   See <a href="https://techterms.com/definition/client-server_model">https://techterms.com/definition/client-server_model</a>   You are used to using maybe a dozen clients everyday (phone apps, web browser, ssh to connect to a remote linux, Remote Desktop client to connect to remote desktop server, etc).  Cloud computing provides all the infrastructure needed to create servers quickly and easily. </p>
+<h4 id="cloud-shell">Cloud Shell</h4>
+<p>Cloud computing providers usually have a service where you can run command line (CLI) or terminal commands in a web browser 'shell'  This is helpful as the libraries and utilities are pre-installed.  See <a href="https://docs.microsoft.com/en-us/azure/cloud-shell/overview">https://docs.microsoft.com/en-us/azure/cloud-shell/overview</a>   and <a href="../topics/intro_to_cloud_interfaces/">Azure Interfaces</a> introduction.  </p>
 <h4 id="containers">Containers</h4>
 <p>Or Docker Containers (not all containers need to be Docker the vast majority of container system use Docker).  For R users, see <a href="https://colinfay.me/docker-r-reproducibility/">https://colinfay.me/docker-r-reproducibility/</a>   For Python users, there is <a href="https://www.netguru.com/blog/python-docker-tutorial">https://www.netguru.com/blog/python-docker-tutorial</a>  although you could read either. </p>
 <p>Linux Containers is a term for a collection of methods and technologies that allows a multiple isolated systems to be run on one Linux computer.   This is differnet from virtual machines in that a VM host provides abstract or virtualized hardware so each VM requires it's own portion of memory and CPU cores whereas containers share the main part of Linux (the kernel), memory and CPU more dynamically.   The primary comercial company for containers is "Docker" so Docker is sometimes used synonymously with 'container' but it is just one form. </p>
