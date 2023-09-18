@@ -438,18 +438,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-select-the-pre-set-configuration" class="md-nav__link">
-    2. select the pre-set configuration
+  <a href="#2-configure-the-vm-using-the-azure-portal" class="md-nav__link">
+    2. Configure the VM using the Azure Portal
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-configure-the-vm-using-the-azure-portal" class="md-nav__link">
-    3. Configure the VM using the Azure Portal
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Configure the VM using the Azure Portal">
+    <nav class="md-nav" aria-label="2. Configure the VM using the Azure Portal">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -460,11 +453,26 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#disks-and-other-settings" class="md-nav__link">
-    Disks and Other Settings
+  <a href="#disks" class="md-nav__link">
+    Disks
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    Networking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-settings" class="md-nav__link">
+    Other Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Settings">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#tags" class="md-nav__link">
@@ -477,6 +485,11 @@
   <a href="#review-and-create" class="md-nav__link">
     Review and Create
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -521,7 +534,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-configure-the-vm-using-the-azure-portal" class="md-nav__link">
+  <a href="#2-configure-the-vm-using-the-azure-portal_1" class="md-nav__link">
     2. Configure the VM using the Azure Portal
   </a>
   
@@ -536,7 +549,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#disks-and-other-settings_1" class="md-nav__link">
+  <a href="#disks-and-other-settings" class="md-nav__link">
     Disks and Other Settings
   </a>
   
@@ -1215,18 +1228,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-select-the-pre-set-configuration" class="md-nav__link">
-    2. select the pre-set configuration
+  <a href="#2-configure-the-vm-using-the-azure-portal" class="md-nav__link">
+    2. Configure the VM using the Azure Portal
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-configure-the-vm-using-the-azure-portal" class="md-nav__link">
-    3. Configure the VM using the Azure Portal
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Configure the VM using the Azure Portal">
+    <nav class="md-nav" aria-label="2. Configure the VM using the Azure Portal">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1237,11 +1243,26 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#disks-and-other-settings" class="md-nav__link">
-    Disks and Other Settings
+  <a href="#disks" class="md-nav__link">
+    Disks
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    Networking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-settings" class="md-nav__link">
+    Other Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Settings">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#tags" class="md-nav__link">
@@ -1254,6 +1275,11 @@
   <a href="#review-and-create" class="md-nav__link">
     Review and Create
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1298,7 +1324,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-configure-the-vm-using-the-azure-portal" class="md-nav__link">
+  <a href="#2-configure-the-vm-using-the-azure-portal_1" class="md-nav__link">
     2. Configure the VM using the Azure Portal
   </a>
   
@@ -1313,7 +1339,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#disks-and-other-settings_1" class="md-nav__link">
+  <a href="#disks-and-other-settings" class="md-nav__link">
     Disks and Other Settings
   </a>
   
@@ -1464,60 +1490,75 @@
 <ul>
 <li>MacOS : install the Microsoft Remote Desktop Client, only available on the App Store: <a href="https://apps.apple.com/app/microsoft-remote-desktop/id1295203466?mt=12">https://apps.apple.com/app/microsoft-remote-desktop/id1295203466?mt=12</a></li>
 <li>Linux users install <a href="http://xrdp.org/">http://xrdp.org/</a></li>
-<li>Windows Users ensure you have the client : In the search box on the taskbar, type Remote Desktop, and then select Remote Desktop Connection.</li>
+<li>Windows Users should have the remote desktop client, but to  ensure you do: In the search box on the taskbar, type Remote Desktop, and then select Remote Desktop Connection.</li>
 </ul>
 <h3 id="1-selecting-the-resource-template">1. Selecting the Resource Template</h3>
 <p>In the <a href="https://portal.azure.com">Azure Portal</a> open the top left menu, and click "+ Create a resource" option (the first option)</p>
-<p>In the create resource search box, type "data science virtual machine"</p>
-<p>In the options select **Data Science Virtual Machine - Windows 2019 **</p>
-<p>The "Plans" section has a description of the template if you would like to know more. </p>
-<p>Click the "<strong>start with a pre-set configuration</strong>" option. </p>
-<h3 id="2-select-the-pre-set-configuration">2. select the pre-set configuration</h3>
-<p>These configurations help to select your VM size based on your activity.  We will use the default options and click <strong>"Continue to create a VM"</strong> </p>
-<p>The options do not affect the outcome of the exercise so at this step explore each option</p>
-<p>Click "<strong>Continue to create a VM</strong>"</p>
-<h3 id="3-configure-the-vm-using-the-azure-portal">3. Configure the VM using the Azure Portal</h3>
+<p>In the create resource search box, type "data science virtual machine" and press enter to search.   It will present you with some of the suggested options as you type but please search. </p>
+<p>In the options select *<em>Data Science Virtual Machine - Windows 2022 (preview) **  </em>(note there is a more recent )</p>
+<p>Click "Create"  ( <em>note: do not click the "</em><em>start with a pre-set configuration</em><em>" option</em> )</p>
+<h3 id="2-configure-the-vm-using-the-azure-portal">2. Configure the VM using the Azure Portal</h3>
 <p>The resource creation forms work as described in the Azure Portal but since we used a pre-set configuration some of the values will be completed. </p>
 <h5 id="basics">Basics</h5>
 <ol>
 <li>
-<p>The <strong>Subscription</strong> should be "Cloud Computing Fellowship" and
-<strong>resource group</strong> should be your CF resource group (with your netid).  As we create additional resource groups for this </p>
+<p><strong>Subscription</strong> should be "Cloud Computing Fellowship" </p>
 </li>
 <li>
-<p><strong>Virtual machine name</strong>  Name: CF21-netid-dsvmtest
-   One option is to combine the project (e.g. the fellowship), your net id, and some description of what you are doing.   In the name above, replace "netid" with your own MSU netid.  <br>Note that different resources have different naming restrictions.  For example VMs the rules are "can be almost anything, but Azure resource names cannot contain special characters \/""[]:|&lt;&gt;+=;,?*@&amp;, whitespace, or begin with '_' or end with '.' or '-' " <br>Note if you have an existing VM with this name, add a number 2 or other suffix.  We will delete this VM and create something more suitable in the future. </p>
+<p><strong>Resource Group</strong> should be your CF resource group (with your netid).  The default is to create a new resource group but participants aren't allow to create their own group,  you must select the resource group with your netid.  </p>
 </li>
 <li>
-<p><strong>Region</strong>  Select "(US) North Central US"</p>
+<p><strong>Virtual machine name</strong>  Name: You could name it anything that is unique in the region you choose, but to help keep track of your resources, I strongly suggest using a name that includes your netid and the purpose of this VM: dsvm-netid-exercise2</p>
+</li>
+</ol>
+<p>In the future, One option is to combine the project (e.g. the fellowship), your net id, and some description of what you are doing.   In the name above, replace "netid" with your own MSU netid.  <br>Note that different resources have different naming restrictions.  For example VMs the rules are "can be almost anything, but Azure resource names cannot contain special characters \/""[]:|&lt;&gt;+=;,?*@&amp;, whitespace, or begin with '_' or end with '.' or '-' " <br>Note if you have an existing VM with this name, add a number 2 or other suffix.  We will delete this VM and create something more suitable in the future. </p>
+<ol>
+<li>
+<p><strong>Region</strong>  Select "(US) Central US"</p>
 </li>
 <li>
-<p><strong>Availability Options</strong> select "No infrastructure Redundancy required"<br />
-   this option is for critical infrastructure that needs to withstand a serious outage (e.g. if a hurricane affects a data center).<br />
-   You may also see an "availability zone" option appear (perhaps with an error message <em>"The value must not be empty"</em>).  Selecting ""No infrastructure Redundancy required" in the availability zone will remove the "availability zone" field and error message. </p>
+<p><strong>Availability Options</strong>  Leave the default ("<code>Availability Zone</code>")</p>
 </li>
-<li><strong>Image</strong> should be "Data Science Virtual Machine - windows..."   if this is change you may </li>
+<li>
+<p><strong>Availability Zone</strong> Leave the default ( "<code>Zones 1</code>")</p>
+</li>
+<li>
+<p><strong>Security Type</strong>  You must change this value to "<code>Standard</code>" security type.  The "Trusted"  security option is for servers or production machines.  </p>
+</li>
+<li><strong>Image</strong> should be "Data Science Virtual Machine - windows..."   if this is changed you may have to re-enter some info again.  </li>
+<li><strong>VM Architecture</strong> Leave as the default </li>
 <li><strong>Azure Spot Instance</strong>  leave unchecked.   </li>
-<li><strong>Size</strong>   You can leave the size that is currently selected, which is based on the pre-set configuration from the previous step. 
-   This is how you select the specifications for <a href="../cloud_glossary/#cpu">CPU</a> and memory.  The size you for this exercise doesn't matter for the outcome, but it will show prices which may be interesting.  If you click this drop-down menu you may see some other sizes and prices.  The Monthly price assumes 24 hour/day operation.  Your price to experiment will often be less than $1.00  </li>
+<li><strong>Size</strong>   You can leave the size that is currently selected. 
+   NOTES: This is how you select the specifications for <a href="../cloud_glossary/#cpu">CPU</a> and memory.  The size you for this exercise doesn't matter for the outcome, but it will show prices which may be interesting.  If you click this drop-down menu you may see some other sizes and prices.  The Monthly price assumes 24 hour/day operation.  Your price to experiment will often be less than $1.00  </li>
 <li><strong>Administrator Account</strong>
    Just like you need to log-in to your own computer, you must create a user account for the VM.   Select a User name and account that you will easily remember, because you will need it to log-in to the new VM. <ul>
-<li>username : use any user name you will easily remember, perhaps your netid</li>
-<li>password : something you can remember, but is complex to be secure.  Do <strong>not</strong> use your MSU password or any other passwords you use</li>
+<li>username : use any user name you will easily remember.  I use my netid so I can always remember. </li>
+<li>password : this must be a complex password, but use something you can remember, or copy/paste from another program.  Do <strong>not</strong> use your MSU password or any other passwords you use</li>
 </ul>
 </li>
-<li><strong>Licensing</strong>  Unlike Linux, Windows requires a license, and this option are for organization with an arrangement with Azure.   Leave this box unchecked and Azure will add the extra charges (a few cents per hour) for the use of Windows.    </li>
+<li><strong>Licensing</strong>  Unlike Linux, Windows requires a license, and this option are for organization with an arrangement with Azure.   Leave this box unchecked and Azure will add the extra charges (a few cents per hour) for the use of Windows.   If you use a Windows VM for your research, you may be able to use an MSU license.  </li>
 </ol>
-<h5 id="disks-and-other-settings">Disks and Other Settings</h5>
-<p>For this exercise we'll be using the default values for almost all the pages except for <strong>Basics</strong> page.    However you are encouraged to look through these options to see what is involved in creating a virtual machine.  The <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/">Azure VM documentation</a> covers many of them.   For example a VM requires several networking components.   The good news is that Azure will name and create these for you, which will see.  </p>
+<h5 id="disks">Disks</h5>
+<p>Leave these as the defaults.  </p>
+<p>I want to point out one option that "Delete with VM."    We will talk about this in the future, but for now it's like purchasing the computer and the disk inside separately.   In this case we are just testing so we will delete everything after we are done, but in practice there are reasons for keeping the disk around after you delete the VM so you may sometimes want to uncheck this box  </p>
+<h4 id="networking">Networking</h4>
+<p>Use the defaults for all of these options. </p>
+<p>Again note the  "Delete public IP and NIC when VM is deleted" option.  As you follow this exercise you will see how to delete networking resources with the VM. </p>
+<p>Note that you must configure some kind of networking when creating VMs and other resources in the cloud.   These defaults are fine for that and will create networking resources for which you will be charged (but not much). </p>
+<h4 id="other-settings">Other Settings</h4>
+<p>For this exercise we'll be using the default values for almost all the pages except for <strong>Basics</strong> page.    However you are encouraged to look through these options to see what is involved in creating a virtual machine.  The <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/">Azure VM documentation</a> covers many of them.   For example a VM requires several networking components.   The good news is that Azure will name and create these for you, which will see. </p>
 <h5 id="tags">Tags</h5>
-<p>For this exercise, using tags will be essential for identifying which components go to which VM.  If you need more information see <a href="index.md">session 2 page</a>  for a readings about tags.   Do the following: </p>
+<p>For this exercise, using tags will be essential for identifying which components go to which VM.  If you need more information see <a href="../../sessions/02_how_to_cloud/">session 2 page</a>  for readings about tags.   On the tags section, do the following: </p>
 <ol>
 <li>Click "tags" in the top row of options (just before 'review and create')</li>
-<li>In the first row, For <strong>Name</strong>, type <code>activity</code> and for the <strong>Value</strong> type  <code>session2_vm</code> or similar unique value. </li>
-<li>click "review and create" </li>
+<li>In the first row, For <strong>Name</strong>, type <code>activity</code> and for the <strong>Value</strong> type  <code>session2 vm</code> or similar unique value. </li>
+<li>Optionally, in an additional row, create another tag with <strong>Name</strong> <code>created by</code> and for <strong>Value</strong> put your netid.   This 
+kind of tag can be essential when you are sharing cloud accounts with other members of your work group, so that others in your group may identify who created the resources. </li>
 </ol>
 <h5 id="review-and-create">Review and Create</h5>
+<ol>
+<li>click "review and create" at the bottom of the screen. </li>
+</ol>
 <p>If there are errors the form name will have a red dot next to it.  Go back to that form and see what may be the issue. </p>
 <p>If the Validation passed, it will display the approximate hourly cost to use this VM.  Mine says <code>0.1920 USD/hr</code></p>
 <p>Click "Create" and the deployment will start.  It will take at most 15 minutes.  </p>
@@ -1539,7 +1580,7 @@
 <p>In the <a href="https://portal.azure.com">Azure Portal</a> open the top left menu, and click "+ Create a resource" option (the first option)</p>
 <p>In the create resource search box, type "data science virtual machine"</p>
 <p>In the options select <strong>Data Science Virtual Machine - Ubuntu 20.04</strong></p>
-<h4 id="2-configure-the-vm-using-the-azure-portal">2. Configure the VM using the Azure Portal</h4>
+<h4 id="2-configure-the-vm-using-the-azure-portal_1">2. Configure the VM using the Azure Portal</h4>
 <p>The resource creation forms work as described in the Azure Portal but since we used a pre-set configuration some of the values will be completed. </p>
 <h5 id="basics_1">Basics</h5>
 <ol>
@@ -1574,7 +1615,7 @@
 <p><strong>password</strong> : something you can remember, but is complex to be secure.  Do <strong>not</strong> use your MSU password or any other passwords you use</p>
 </li>
 </ol>
-<h5 id="disks-and-other-settings_1">Disks and Other Settings</h5>
+<h5 id="disks-and-other-settings">Disks and Other Settings</h5>
 <p>For this exercise we'll be using the default values for almost all the pages, except for '<strong>Basics</strong>' page.    However you are encouraged to look through these options to see what is involved in creating a virtual machine.  The <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/">Azure VM documentation</a> covers many of them.   For example a VM requires several networking components.   The good news is that Azure will name and create these for you, which will see.  </p>
 <h5 id="tags_1">Tags</h5>
 <p>Using the Azure portal to create VM creates several resources (up to 12).  Using tags will be essential for identifying which components go to which VM. This is the metadata associated with these resources.  I suggest using a tag like "activity" to indicate which of our activities was used to create these resources.   </p>
