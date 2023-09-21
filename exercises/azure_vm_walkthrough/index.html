@@ -734,26 +734,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercise_create_azure_vm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exercise: Creating and Connecting to a Virtual Machine (VM) for both Windows and Linux
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../exercise_create_storage_account/" class="md-nav__link">
         
   
@@ -1515,8 +1495,8 @@
 <p>We will use a pre-configured virtual machine with software already installed for both versions.  When creating a VM you can use an Azure template and there are many of these.  The Data Science Virtual Machine (DSVM) from Azure has R, Python and many data science and statistical libraries available.   For more information about the Azure DSVM see <a href="https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/">https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/</a>   and for the list of tools installed, see <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/tools-included">https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/tools-included</a>  Azure has a new product called "Azure Machine Learning" that we may cover in a future session. </p>
 <h2 id="requirements-for-both-activities">Requirements for both activities</h2>
 <p>You need an Azure account with an active subscription, and a resource group of your own to work in.   Fellows have these things provided.  </p>
-<p>This exercise assumes you understand how to use the Azure Portal, which is covered in the <a href="../azure_portal_walkthrough/">Azure Portal Walkthrough</a>.  In addition it's helpful to know what a virtual machine is but it's not crucial to complete the exercise.  For more information on VMs see the <a href="msu-cloud-fellowship21-session2.pdf">slides from session 2</a> and readings from the <a href="index.md#readings">"Virtual Machine Background"</a> section</p>
-<p>It's helpful to have basic understanding of the <a href="cloud_glossary/#client-server">"Client-Server"</a> model of computing as the VM we create will be running servers (remote desktop server for Windows, and ssh command line server for Linux)</p>
+<p>This exercise assumes you understand how to use the Azure Portal, which is covered in the <a href="../azure_portal_walkthrough/">Azure Portal Walkthrough</a>.  In addition it's helpful to know what a virtual machine is but it's not crucial to complete the exercise.  For more information on VMs see the readings <a href="../../sessions/02_how_to_cloud/">session 2</a></p>
+<p>It's helpful to have basic understanding of the <a href="../../cloud_glossary/#client-server">"Client-Server"</a> model of computing as the VM we create will be running servers (remote desktop server for Windows, and ssh command line server for Linux)</p>
 <p>Finally we find that there are many layers of concepts related in this exercise related to IT Infrastructure, and we are happy to provde clarification as needed. </p>
 <h2 id="optional-video-walk-through">Optional Video Walk-through</h2>
 <p>There was a previous exercise that created a Windows Virtual Machine only (from 2021).  The following video is based on the exercise.   Watching and following the video is not necessary to complete the exercise on this page, and it does not cover linux. However if you find videos more helpful, or would like to see in detail how it works, please take advantage of this walk-through: </p>
@@ -1572,7 +1552,7 @@
 <li><strong>Azure Spot Instance</strong>  leave unchecked.   </li>
 <li>
 <p><strong>Size</strong>   You can leave the size that is currently selected. 
-   NOTES: This is how you select the specifications for <a href="../cloud_glossary/#cpu">CPU</a> and memory.  The size you for this exercise doesn't matter for the outcome, but it will show prices which may be interesting.  If you click this drop-down menu you may see some other sizes and prices.  The Monthly price assumes 24 hour/day operation.  Your price to experiment will often be less than $1.00  </p>
+   NOTES: This is how you select the specifications for <a href="../../cloud_glossary/#cpu">CPU</a> and memory.  The size you for this exercise doesn't matter for the outcome, but it will show prices which may be interesting.  If you click this drop-down menu you may see some other sizes and prices.  The Monthly price assumes 24 hour/day operation.  Your price to experiment will often be less than $1.00  </p>
 </li>
 <li>
 <p><strong>Administrator Account</strong>
@@ -1656,7 +1636,7 @@ kind of tag can be essential when you are sharing cloud accounts with other memb
 <li><strong>VM Architecture</strong> leave as x64 (Intel processor compatible)</li>
 <li><strong>Run with Azure Spot discount</strong>  leave unchecked.   </li>
 <li><strong>Size</strong>   You can leave the size that is currently selected, which is based on the pre-set configuration from the previous step.   <br>
-   This is how you select the specifications for <a href="../cloud_glossary/#cpu">CPU</a> and memory.  The size you for this exercise doesn't matter for the outcome, but it will show prices which may be interesting.  If you click this drop-down menu you may see some other sizes and prices.  The Monthly price assumes 24 hour/day operation.  Your price to experiment will often be less than $1.00   Click "see all sizes" if you are feeling adventurous --  there are maybe 100 options.  (click the  <code>[x]</code> in upper right to close the size selector window)</li>
+   This is how you select the specifications for <a href="../../cloud_glossary/#cpu">CPU</a> and memory.  The size you for this exercise doesn't matter for the outcome, but it will show prices which may be interesting.  If you click this drop-down menu you may see some other sizes and prices.  The Monthly price assumes 24 hour/day operation.  Your price to experiment will often be less than $1.00   Click "see all sizes" if you are feeling adventurous --  there are maybe 100 options.  (click the  <code>[x]</code> in upper right to close the size selector window)</li>
 <li><strong>Administrator Account</strong>
    Just like you need to log-in to your own computer, you must create a user account for the VM.   </li>
 <li><strong>Authentication Type</strong>  For the purpose of this exercise, select "password"  SSH Keys are strongly recommened but to keep this simple we will use a password. </li>
@@ -1720,7 +1700,7 @@ kind of tag can be essential when you are sharing cloud accounts with other memb
 <ul>
 <li>in the top row are buttons to connect, start, restart and stop the vvm.   </li>
 <li>in the top, "essentials" section the  "status" should be "running."</li>
-<li>on the right side is the assigned <a href="../cloud_glossary/#ip-address">IP address</a> which you need to connect.   Highlight and copy and paste this address.   If you click the link on the address, it will take you to a new resource page just for the IP address (which is a distinct resource assigned to this VM resource)</li>
+<li>on the right side is the assigned <a href="../../cloud_glossary/#ip-address">IP address</a> which you need to connect.   Highlight and copy and paste this address.   If you click the link on the address, it will take you to a new resource page just for the IP address (which is a distinct resource assigned to this VM resource)</li>
 </ul>
 <h2 id="connecting">Connecting</h2>
 <h3 id="connecting-to-a-windows-vm-using-remote-desktop-protocol-rdp-client">Connecting to a <strong>Windows</strong> VM using Remote Desktop Protocol (RDP) client</h3>
@@ -1852,7 +1832,7 @@ We will cover how to transfer code and files to a VM in a later session. </p>
 </ul>
 <p>If you follow these, just remember to delete the resources you create when you are done exploring</p>
 <hr />
-<p>Return to the <a href="index.md">Session 2 page</a></p>
+<p>Return to the <a href="../../sessions/02_how_to_cloud/">Session 2 page</a></p>
 
 
 

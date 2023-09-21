@@ -407,26 +407,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/exercise_create_azure_vm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exercise: Creating and Connecting to a Virtual Machine (VM) for both Windows and Linux
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../exercises/exercise_create_storage_account/" class="md-nav__link">
         
   
@@ -1007,7 +987,7 @@
 <h1 id="session-3-cloud-storage">Session 3: Cloud Storage</h1>
 <p><img alt="storage_units" src="../../img/storage_units.jpg" /></p>
 <h2 id="introduction">Introduction</h2>
-<p>Central to using cloud for nearly all services is storing data.   Cloud storage is quite different from what most are used to related to saving a file to your disk or USB removable media or even our HPC.   During our <a href="../session_how_to_cloud">workshop on creating a VM</a> we didn't use cloud storage, we simply create a VM "virtual disk" that is attached to the VM just like your hard drive is attached to your own computer.   However there are disadvantages to this : 
+<p>Central to using cloud for nearly all services is storing data.   Cloud storage is quite different from what most are used to related to saving a file to your disk or USB removable media or even our HPC.   During the previous <a href="../02_how_to_cloud/">workshop</a> we created a VM but didn't use cloud storage, we simply create a VM "virtual disk" that is attached to the VM just like your hard drive is attached to your own computer.   However there are disadvantages to this : 
   1. the main OS disk is typically deleted when the VM is deleted, although you can create a 'durable' disk to share
   1. the data on the main OS disk is tied to that Virtual Machine and hence that operating system, that is, it's typically inaccessible from other cloud services 
   1. it is limited in size and scope  The largest of virtual disks are around 1 TB.  Azure Cloud storage accounts are limited to 5 TB and you may have multiple storage accounts. <br />
@@ -1019,7 +999,7 @@
 <p><a href="../../topics/azure_cloud_storage_for_researchers.html">Azure Cloud Storage for Researchers</a> (Slides)</p>
 </li>
 <li>
-<p>Exercise: <a href="storage_pricing_exercise.md">Azure Storage Pricing</a> </p>
+<p>Exercise: <a href="../../exercises/storage_pricing_exercise/">Azure Storage Pricing</a> </p>
 </li>
 </ul>
 <h2 id="readings">Readings</h2>
@@ -1040,8 +1020,12 @@
 </ul>
 <h2 id="activities">Activities</h2>
 <ul>
-<li>Download and install the <a href="https://azure.microsoft.com/en-us/features/storage-explorer/">Azure Cloud Storage Explorer</a>  See the <strong>"Download now"</strong> button at the top of that page.  You may review the content of the page</li>
-<li>complete exercises in <a href="exercise_creating_azure_cloud_storage.md">Creating Azure Cloud Storage Accounts</a> to create and use storage</li>
+<li>
+<p>Download and install the <a href="https://azure.microsoft.com/en-us/features/storage-explorer/">Azure Cloud Storage Explorer</a>  See the <strong>"Download now"</strong> button at the top of that page.  You may review the content of the page</p>
+</li>
+<li>
+<p>We did this in the first session, but if you want to work through this again for complete exercises in <a href="../../exercises/exercise_create_storage_account/">Creating Azure Cloud Storage Accounts</a> to create and use storage.  </p>
+</li>
 </ul>
 <p><a href="https://learn.microsoft.com/en-us/azure/storage/files/storage-files-quick-create-use-windows?source=recommendations">https://learn.microsoft.com/en-us/azure/storage/files/storage-files-quick-create-use-windows?source=recommendations</a></p>
 <h2 id="post-session-discussion-points">Post-session discussion points</h2>
