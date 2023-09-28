@@ -1674,7 +1674,11 @@ kind of tag can be essential when you are sharing cloud accounts with other memb
 <hr>
 
 <h2 id="viewing-vm-resources-in-your-resource-group-windows-and-linux"><strong>Viewing VM Resources in your Resource group (Windows and Linux)</strong></h2>
-<p><em>While the deployment is in progress you may explore the operation details or click any of the resources that have been created.</em>   </p>
+<ul>
+<li></li>
+</ul>
+<p>You have a few options now.   You can wait for the deployment to complete in the portal.  When it's ready, the Azure portal will display a message and a link to "go to resource." </p>
+<p>However you can also go to the page that lists the items in your resource group to find and explore while the deployment is in progress. </p>
 <ol>
 <li>Open your resource group in the portal:  <ol>
 <li>click the portal menu on the top left, and select "resource groups"</li>
@@ -1696,11 +1700,13 @@ kind of tag can be essential when you are sharing cloud accounts with other memb
 <p>To see the details for your virtual machine, click the VM in your resource group if you haven't already. </p>
 <p><a href="../vm_activity/vm_activity_screenshot_vm_resource_portal_page_no_highlights.png" target="_blank"><img alt="Azure Portal view of an example VM" src="../vm_activity/vm_activity_screenshot_vm_resource_portal_page_no_highlights.png" /></a>
 <em>click for larger view</em></p>
+<p>Note that the Azure portal will show a few errors/warnings if the deployment is not complete.   You may see a warning that the 'agent' in the VM is not working, but you can ignore it.   It will go away when the VM configuration is complete. </p>
+<p><img alt="VM status agent not complete" src="../vm_activity/vm_not_ready_error.jpg" /></p>
 <p>There are many details here but some immediate things to notice: </p>
 <ul>
 <li>in the top row are buttons to connect, start, restart and stop the vvm.   </li>
 <li>in the top, "essentials" section the  "status" should be "running."</li>
-<li>on the right side is the assigned <a href="../../cloud_glossary/#ip-address">IP address</a> which you need to connect.   Highlight and copy and paste this address.   If you click the link on the address, it will take you to a new resource page just for the IP address (which is a distinct resource assigned to this VM resource)</li>
+<li>on the right side is the assigned <a href="../../cloud_glossary/#ip-address">IP address</a> which you need to connect.  If you are connecting with RDP, then then RDP file has this address in it so you don't need to remember it.  However this is the IP address you can use to connect directly from your Remote Desktop client or the SSH client.   For now just need to know that this IP address is here on the main VM page.   Note that, if you click the link on the address, it will take you to a new resource page just for the IP address (which is a distinct resource assigned to this VM resource)</li>
 </ul>
 <h2 id="connecting">Connecting</h2>
 <h3 id="connecting-to-a-windows-vm-using-remote-desktop-protocol-rdp-client">Connecting to a <strong>Windows</strong> VM using Remote Desktop Protocol (RDP) client</h3>
@@ -1709,19 +1715,21 @@ kind of tag can be essential when you are sharing cloud accounts with other memb
 <p>The following Azure documentation describes how to connect to a Windows VM: <br />
 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon</a></p>
 <p>Here are more detailed instructions: </p>
-<p>There is a 'connect' link above the 'essentials' list, and a connect link on the left side - they both go to the same place. </p>
+<p>There is a 'connect' link on the left side in the "Settings" section of the left menu.  </p>
 <p>The connect pane looks something like this:  <img alt="connect pane" src="../vm_activity/azure_vm_connect_pane_2023.jpg" /></p>
 <p><strong>Connect with RDP</strong>  (remote desktop protocol)  is a Microsoft method for connecting to the graphical desktop.  For Mac/Linux requires additional software (mentioned at the beginning of this page).  </p>
 <ul>
 <li>
 <p>Step 1: In the Azure portal:</p>
 <ul>
-<li>click "connect" and in the "native rdp" box, click "select</li>
+<li>click "connect" on the left side menu if haven't already</li>
+<li>in the "native rdp" box, click "select"</li>
+<li>optional: if the machine is still deloying or turned off, you may get a warning that the machine is stopped.  click start VM. 
+<img alt="Azure connection VM stopped  warning" src="../vm_activity/your_vm_is_stopped_error.jpg" /></li>
 <li>a new pane displays, that may look like this: 
 <img alt="Azure rdp connect pane 2023" src="../vm_activity/azure_vm_connect_pane_2023.jpg" /></li>
-<li>it may take a few seconds for Azure to configure the VM to use RDP, wait for the gray "configure" button to save "configured"</li>
+<li>it may take a few seconds for Azure to configure the VM to use RDP, with the message that "Auzre is configuring... "When it's working on it, you will see it say "validating" in a gray box.     Some users found that it never finished!   However the VM is still available for a connection.    You may wait for the grey "validating" button to change to "configured" but if it does not appear to be completing, please move on to the next step anyway. </li>
 <li>click "<strong>download RDP file</strong>" button and save the <code>.rdp</code> file anywhere on your computer that you find it again</li>
-<li>note that at one point I had the error message "VM Not Started."  I believe I didn't wait long enough for it to be provisioned.   Click the "start VM" on this message</li>
 </ul>
 </li>
 <li>
