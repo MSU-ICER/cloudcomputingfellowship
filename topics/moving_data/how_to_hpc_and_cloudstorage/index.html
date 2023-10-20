@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../staying_organized_in_azure/">
+        <link rel="prev" href="../creating_a_container_sas_token_from_the_azure_portal/">
       
       
-        <link rel="next" href="../moving_data/creating_a_container_sas_token_from_the_azure_portal/">
+        <link rel="next" href="../moving_data_in_cloud/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>The Computing in Cloud Computing - MSU Cloud Computing Fellowship</title>
+        <title>How to move data between the MSU HPC and Azure - MSU Cloud Computing Fellowship</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#helping-to-understand-the-computing-in-cloud-computing" class="md-skip">
+        <a href="#how-to-move-data-between-the-msu-hpc-and-azure" class="md-skip">
           Skip to content
         </a>
       
@@ -87,7 +87,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="MSU Cloud Computing Fellowship" class="md-header__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
+    <a href="../../.." title="MSU Cloud Computing Fellowship" class="md-header__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Computing in Cloud Computing
+              How to move data between the MSU HPC and Azure
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="MSU Cloud Computing Fellowship" class="md-nav__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
+    <a href="../../.." title="MSU Cloud Computing Fellowship" class="md-nav__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -198,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -217,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -236,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud_glossary/" class="md-nav__link">
+      <a href="../../../cloud_glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contact/" class="md-nav__link">
+      <a href="../../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -274,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/" class="md-nav__link">
+      <a href="../../../projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -329,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/azure_portal_walkthrough/" class="md-nav__link">
+      <a href="../../../exercises/azure_portal_walkthrough/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -349,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/azure_vm_walkthrough/" class="md-nav__link">
+      <a href="../../../exercises/azure_vm_walkthrough/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -369,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/azure_windows_vm_walkthrough/" class="md-nav__link">
+      <a href="../../../exercises/azure_windows_vm_walkthrough/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/exercise_budget_alert/" class="md-nav__link">
+      <a href="../../../exercises/exercise_budget_alert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -409,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/exercise_create_storage_account/" class="md-nav__link">
+      <a href="../../../exercises/exercise_create_storage_account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/exercise_using_the_cloud_to_summarize_and_visualize_data/" class="md-nav__link">
+      <a href="../../../exercises/exercise_using_the_cloud_to_summarize_and_visualize_data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -449,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/exercise_vm_via_cli/" class="md-nav__link">
+      <a href="../../../exercises/exercise_vm_via_cli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/exercise_windows_filestorage/" class="md-nav__link">
+      <a href="../../../exercises/exercise_windows_filestorage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -489,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exercises/storage_pricing_exercise/" class="md-nav__link">
+      <a href="../../../exercises/storage_pricing_exercise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../references/" class="md-nav__link">
+      <a href="../../../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -615,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sessions/01_introduction/" class="md-nav__link">
+      <a href="../../../sessions/01_introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sessions/02_how_to_cloud/" class="md-nav__link">
+      <a href="../../../sessions/02_how_to_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -655,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sessions/03_cloud_storage/" class="md-nav__link">
+      <a href="../../../sessions/03_cloud_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sessions/04_organization/" class="md-nav__link">
+      <a href="../../../sessions/04_organization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -740,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -760,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../azure_cloud_cost_basics/" class="md-nav__link">
+      <a href="../../azure_cloud_cost_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -780,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../azure_organization/" class="md-nav__link">
+      <a href="../../azure_organization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -800,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../azure_tags/" class="md-nav__link">
+      <a href="../../azure_tags/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -820,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../iam/" class="md-nav__link">
+      <a href="../../iam/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro_aspects_of_cloud_computing/" class="md-nav__link">
+      <a href="../../intro_aspects_of_cloud_computing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro_to_cloud_interfaces/" class="md-nav__link">
+      <a href="../../intro_to_cloud_interfaces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -880,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../learning_how_to_learn_about_cloud/" class="md-nav__link">
+      <a href="../../learning_how_to_learn_about_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -900,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../monitoring_in_azure/" class="md-nav__link">
+      <a href="../../monitoring_in_azure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../service_level_model_of_cloud/" class="md-nav__link">
+      <a href="../../service_level_model_of_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -940,11 +940,89 @@
   
   
     <li class="md-nav__item">
-      <a href="../staying_organized_in_azure/" class="md-nav__link">
+      <a href="../../staying_organized_in_azure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Staying organized in azure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../the_computing_in_cloud_computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Computing in Cloud Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_13" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9_13" id="__nav_9_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Moving data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_13_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9_13">
+            <span class="md-nav__icon md-icon"></span>
+            Moving data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating_a_container_sas_token_from_the_azure_portal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating a Storage Account SAS token
   </span>
   
 
@@ -973,7 +1051,7 @@
           
   
   <span class="md-ellipsis">
-    The Computing in Cloud Computing
+    How to move data between the MSU HPC and Azure
   </span>
   
 
@@ -984,7 +1062,7 @@
         
   
   <span class="md-ellipsis">
-    The Computing in Cloud Computing
+    How to move data between the MSU HPC and Azure
   </span>
   
 
@@ -1006,23 +1084,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-computing-minimal-vocabulary" class="md-nav__link">
-    What is computing? Minimal Vocabulary
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-computing-major-components-of-computer" class="md-nav__link">
-    About Computing: Major components of computer
+  <a href="#method-1-using-scp-with-a-virtual-machine" class="md-nav__link">
+    Method 1. using scp with a virtual machine
   </a>
   
-    <nav class="md-nav" aria-label="About Computing: Major components of computer">
+    <nav class="md-nav" aria-label="Method 1. using scp with a virtual machine">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#stack-model-of-computing" class="md-nav__link">
-    "Stack Model" of computing.
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-little-about-the-scp-utility" class="md-nav__link">
+    A little about the scp utility
   </a>
   
 </li>
@@ -1033,30 +1118,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-computing-what-is-a-server" class="md-nav__link">
-    About Computing: What is a server?
+  <a href="#method-2-azcopy" class="md-nav__link">
+    Method 2. azcopy
   </a>
   
-    <nav class="md-nav" aria-label="About Computing: What is a server?">
+    <nav class="md-nav" aria-label="Method 2. azcopy">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-server" class="md-nav__link">
-    Example Server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-types-of-servers" class="md-nav__link">
-    Other Types of Servers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servers-and-networks" class="md-nav__link">
-    Servers and Networks
+  <a href="#requirements_1" class="md-nav__link">
+    Requirements
   </a>
   
 </li>
@@ -1067,9 +1138,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#too-much-hardware-virtualization-to-the-rescue" class="md-nav__link">
-    Too much hardware? Virtualization to the rescue
+  <a href="#alternative-methods" class="md-nav__link">
+    Alternative Methods
   </a>
+  
+    <nav class="md-nav" aria-label="Alternative Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-3-azure-data-factory" class="md-nav__link">
+    Method 3. Azure data factory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-4-python" class="md-nav__link">
+    Method 4. Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-5-python-with-url" class="md-nav__link">
+    Method 5. Python with URL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1087,84 +1185,8 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_13" >
-        
-          
-          <label class="md-nav__link" for="__nav_9_13" id="__nav_9_13_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Moving data
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9_13">
-            <span class="md-nav__icon md-icon"></span>
-            Moving data
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../moving_data/creating_a_container_sas_token_from_the_azure_portal/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Creating a Storage Account SAS token
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../moving_data/how_to_hpc_and_cloudstorage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to move data between the MSU HPC and Azure
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../moving_data/moving_data_in_cloud/" class="md-nav__link">
+      <a href="../moving_data_in_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1184,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../moving_data/moving_data_with_url_activity/" class="md-nav__link">
+      <a href="../moving_data_with_url_activity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1240,23 +1262,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-computing-minimal-vocabulary" class="md-nav__link">
-    What is computing? Minimal Vocabulary
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-computing-major-components-of-computer" class="md-nav__link">
-    About Computing: Major components of computer
+  <a href="#method-1-using-scp-with-a-virtual-machine" class="md-nav__link">
+    Method 1. using scp with a virtual machine
   </a>
   
-    <nav class="md-nav" aria-label="About Computing: Major components of computer">
+    <nav class="md-nav" aria-label="Method 1. using scp with a virtual machine">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#stack-model-of-computing" class="md-nav__link">
-    "Stack Model" of computing.
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-little-about-the-scp-utility" class="md-nav__link">
+    A little about the scp utility
   </a>
   
 </li>
@@ -1267,30 +1296,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-computing-what-is-a-server" class="md-nav__link">
-    About Computing: What is a server?
+  <a href="#method-2-azcopy" class="md-nav__link">
+    Method 2. azcopy
   </a>
   
-    <nav class="md-nav" aria-label="About Computing: What is a server?">
+    <nav class="md-nav" aria-label="Method 2. azcopy">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-server" class="md-nav__link">
-    Example Server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-types-of-servers" class="md-nav__link">
-    Other Types of Servers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servers-and-networks" class="md-nav__link">
-    Servers and Networks
+  <a href="#requirements_1" class="md-nav__link">
+    Requirements
   </a>
   
 </li>
@@ -1301,9 +1316,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#too-much-hardware-virtualization-to-the-rescue" class="md-nav__link">
-    Too much hardware? Virtualization to the rescue
+  <a href="#alternative-methods" class="md-nav__link">
+    Alternative Methods
   </a>
+  
+    <nav class="md-nav" aria-label="Alternative Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-3-azure-data-factory" class="md-nav__link">
+    Method 3. Azure data factory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-4-python" class="md-nav__link">
+    Method 4. Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-5-python-with-url" class="md-nav__link">
+    Method 5. Python with URL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1322,102 +1364,97 @@
                   
 
 
-<h1 id="helping-to-understand-the-computing-in-cloud-computing">Helping to Understand the "computing" in cloud computing</h1>
-<p><img alt="" src="../../img/header_image_old_corp_network_diagram.jpg" /></p>
-<p>You come to us with a unique set of experiences with computing, with more or less experience depending on your previous needs.  A challenge we have seen, for the many years we've been helping people, is understanding the context of computing in their research to understand the tools they have available.    </p>
-<p>In fact most documentation for cloud computing assumes you know the world of computing.   <a href="https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/">An introduction to cloud computing from microsoft</a> lists this  Prerequisite: "Basic familiarity with IT terms and concepts."  It turns out 'basic' can mean a lot of things.</p>
-<p><strong>A core goal of the MSU Cloud Computing Fellowship is to help you connect cloud computing to your research in a meaningful way</strong></p>
-<p>our original question: 
-- How can <em>cloud computing</em> benefit help your research?</p>
-<p>Let's re-frame the question for this discussion:
-- Which kind of <em>computing</em> could help my research?
-- Can I use that kind of <em>computing</em> in <em>the cloud</em>? \
-  That is, could cloud computing enable me to use computing I otherwise couldn't?</p>
-<p>You may already have an idea of what this is, and experience with computing but many who come to us know it's valuable but are ready to learn why.  </p>
-<h2 id="what-is-computing-minimal-vocabulary">What is computing? Minimal Vocabulary</h2>
-<p>Cloud computing was invented for, and is marketed to IT systems administrators, software developers, and IT/technology managers.  See the history of AWS.   It is was not designed with researchers in mind.   Most training and documentation  Note, however, that Cloud Computing is general enough and is often marketed to researchers or 'for research.'  </p>
-<p>The primary function of cloud computing is to provide "infrastructure" aka the "back-end" or back room of a company's IT department, so we ware going to learn about that.  In fact, cloud computing is frequently defined, named, and sold based on abstractions of physical components of computers and IT infrastructure.    Hence learning more about IT infrastructure, or "computing" may be helpful understanding the context in which cloud computing is engineered.  This can help you determin what you may need from cloud computing to get your research done.   </p>
-<p>Could you purchase your own infrastructure (computers, networks, disks, etc) and run it "on-premise" and get the same benefit as cloud computing?  Or have your institution do that?  Sometimes yes!  The MSU HPCC is a great example when on-premise is more beneficial and cost-effective than cloud computing.   </p>
-<h2 id="about-computing-major-components-of-computer">About Computing: Major components of computer</h2>
-<p>Of course you know what is in a computer. The goal is to come to common understanding, and to frame for extension to cloud, and to find the cloud services that mimic these features.  </p>
+<h1 id="how-to-move-data-between-the-msu-hpc-and-azure">How to move data between the MSU HPC and Azure</h1>
+<h2 id="introduction">Introduction</h2>
+<p>A common research cloud computing activity is moving data between cloud and on-premise (local) systems.   Many universities provide great local systems at low costs, and some research groups have existing systems they've invested in, whereas cloud computing is an on-going costs. </p>
+<p>Azure has a rich data ecosystem and there are many methods to copy data from our local research cluster ([MSU ICER HPCC) to Azure Storage.  The follow are examples of methods that I've used, and all assume you are moving data to "Azure Blob" storage but may require minor adjustment to use "Azure Files" storage which should also work.  I don't discuss "queue" or "table" storage at all and that my require other services to use (events or data factory)  </p>
+<h2 id="method-1-using-scp-with-a-virtual-machine">Method 1. using scp with a virtual machine</h2>
+<p>Sometimes you don't need a durable storage account at all, you just need to get some data onto the virtual machine you are using for computation.  This method is useful for one-time workflow of copy, process, save results.   </p>
+<h3 id="requirements">Requirements</h3>
 <ul>
-<li>User software (scripts, user code, etc)</li>
-<li>Base Software (programs to run scripts such as Python, Rstudio, Stata, Fluent, etc etc and/or libraries to compile code such as the gcc compiler, etc)</li>
-<li>Operating System (needed to make the computer functional)</li>
-<li>Input/Ouput (I/O, infrastructure to get data in and out of a computer, primarily network connections but also USB) </li>
-<li>Storage - external ( attached or via network or other I/O )</li>
-<li>Storage - local disk</li>
-<li>Central Processor (CPU) &amp; Memory (RAM)</li>
-<li>Computer Architecture (model type)</li>
-<li>Network</li>
+<li>an account on the MSU HPCC</li>
+<li>basic knowledge of Linux</li>
+<li>know how to create and use a Azure Virtual Machine</li>
 </ul>
-<p>Where is the data in this abstraction of computer infrastructure? Answer: everywhere</p>
-<p>If you hadn't thought or known about the components of a computer, that's no mistake.   Most people don't know the details of how their car operates, how to change their oil, or diff between carburetor and turbo charging?</p>
-<h3 id="stack-model-of-computing">"Stack Model" of computing.</h3>
-<p>Just as in Science and the humanities, we need a model and terminology to talk about a subject.  A standard IT model of a computer is a 'stack' model, where each upper layer depends upon the layers below.   Most models of cloud computers build upon this simple model.  </p>
-<table border="0">
-<tr><td align="center">User</td></tr>
-<tr><td align="center">Interface/Connection</td></tr>
-<tr><td align="center">Software</td></tr>
-<tr><td align="center">Operating System</td></tr>
-<tr><td align="center">Computer Hardware: CPU & RAM</td></tr>
-<tr><td align="center">Data Storage</td></tr>
-<tr><td align="center">Network</td></tr>
-</table>
+<h3 id="a-little-about-the-scp-utility">A little about the <code>scp</code> utility</h3>
+<p>The HPC runs Linux, and The <code>cp</code> utility copies files from one folder to another.   The <code>scp</code> utility allows us to do that across the network, using a secure method, providing you have an account on the remote system and <code>ssh</code> access.   There are many programs to help with network file transfers but <code>rsync</code> and <code>rclone</code> are two command (and really great) programs to checkout.  We will stick with <code>scp</code> for this example </p>
+<p>The basic format of the scp command is <code>scp user@remote.system.com:path/to/remote/file path/to/copy_of_file</code></p>
+<p>For examples see <a href="http://www.hypexr.org/linux_scp_help.php">http://www.hypexr.org/linux_scp_help.php</a></p>
+<p>Method 1a. simple method for a one-time copy to an Azure VM: </p>
+<p>Steps: 
+1. find the file on the MSU HPCC that you want to copy.  Note the location and full path
+1. create your Virtual Machine in Azure that you will use for your computations if it isn't already. 
+    - if the file is particularly large, make sure to create a VM disk that is large enough to contain it
+1. log-in to the virtual machine with the username and password you created (with remote desktop, or for Linux with ssh)
+1. if you are using Windows with remote desktop, start cmd.exe to get a terminal, if on Linux, you are already on the terminal
+1. use an scp command like this: 
+    - first, note the folder you are running this from (it defaults to the VM home directory)
+    - <code>scp mynetid@hpcc.msu.edu:path/to/file.ext file.ext</code>
+    - you may be asked to accept the host 'fingerprint' if this is the first time you are using scp
+    - enter your NetID password (it is not saved or visible on the command line)
+    - consider using ssh keys instead of your password (which is a whole 'nother lesson)
+    - see <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys">https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys</a>  </p>
+<ol>
+<li>Now you can access the file using the software from the
+I think of this as  "pulling" data from HPC to the VM disk. </li>
+</ol>
+<h2 id="method-2-azcopy">Method 2. azcopy</h2>
+<h3 id="requirements_1">Requirements</h3>
+<ul>
+<li>A Storage account.  We created one in the first session, but create a storage account in your resource group if you don't have one yet. </li>
+<li>Create a container in storage account to hold files. This can be a Blob or Azure Files container</li>
+<li>You must be owner of the storage account, and able to assign permissions ('roles').  Azure requires special persmissions grant that are NOT granted by default to use azcopy.  Details in the instructions below</li>
+<li>OR you must be willing to go through the process of creating a "SAS Token" :  see my <a href="../creating_a_container_sas_token_from_the_azure_portal/">instructions for creating SAS token</a></li>
+</ul>
+<p>Assuming you have a storage account with a blob container already created.  In the portal, open the storage account container. </p>
+<p>Azure provides a command line tool <code>azcopy</code> which you can download for windows, mac and Linux.   see <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10">https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10</a></p>
+<p>How to install the azcopy utility </p>
+<ol>
+<li>Login to MSU HPCC  <code>ssh &lt;netid&gt;@hpcc.msu.edu</code></li>
+<li>download a copy of azcopy.  This is the URL from Late september 2021: 
+   <code>curl -O https://azcopyvnext.azureedge.net/release20210920/azcopy_linux_amd64_10.12.2.tar.gz</code></li>
+<li>untar and put in your home directory
+   <code>tar -xvzf azcopy_linux_amd64_10.12.2.tar.gz</code></li>
+</ol>
+<p>How to use azcopy to upload to Azure using the "AD Login"</p>
+<ol>
+<li>Get a SAS URL from the Azure portal as described above</li>
+<li>Log-in to HPCC</li>
+<li>assuming your copy of <code>azcopy</code> is in your home directory, run a command like the following.  Note that the URL <em>must</em> but enclosed in single quotes (not double quotes)</li>
+</ol>
+<p>`azcopy copy myfile.csv '<a href="https://storageaccount.blob.core.windows.net/containername/myfile.csv?SASToken">https://storageaccount.blob.core.windows.net/containername/myfile.csv?SASToken</a>'</p>
+<p>For example, this copies a file and renames it when it's stored.  The container "from-hpcc" in this case must already be created.  </p>
+<p><code>azcopy copy 2008.csv 'https://cf21billspatstorage.blob.core.windows.net/from-hpcc/airlinedata_2008.csv?sp=racwdl&amp;st=2021-10-08T05:22:52Z&amp;se=2021-10-08T13:22:52Z&amp;sip=35.9.12.1-35.9.12.255&amp;spr=https&amp;sv=2020-08-04&amp;sr=c&amp;sig=abscus'</code></p>
+<p>References:
+ - <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10">Getting Started with azcopy</a>
+ - <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy-login">azcopy login reference</a>
+ - <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-authorize-azure-active-directory">Authorize access to blobs with AzCopy and Azure Active Directory (Azure AD)</a>
+ - <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers">Generate SAS tokens for your storage containers</a>  *(note I found this in the "cognitive services" documentation)</p>
+<h2 id="alternative-methods">Alternative Methods</h2>
+<h3 id="method-3-azure-data-factory">Method 3. Azure data factory</h3>
+<p>We will cover what "Azure Data Factory" is in session 4, but this is included in this session for completeness. </p>
+<p>If you have some familiarity with Azure data factory, note that a "source" for Azure Data Factory" can be an 'sftp' or 'secure file transfer protocol' which most systems that have 'ssh' (secure shell) access allow, and is simlar to using the 'scp' or 'secure copy' utility. </p>
+<h3 id="method-4-python">Method 4. Python</h3>
+<p>We won't really cover using Python to copy files to/from blob storage, but see the optional exercise for using Azure cloud storage in Python in <a href="../session_cloud_storage/index.md">session #3</a>.  </p>
+<p>To use Azure python SDK on the HPC you need to installed the azure python sdk in a python environment in your home directory, for example using the Anaconda distribution of Python.  See <a href="https://wiki.hpcc.msu.edu/display/ITH/Using+conda">https://wiki.hpcc.msu.edu/display/ITH/Using+conda</a>.   </p>
+<h3 id="method-5-python-with-url">Method 5. Python with URL</h3>
+<p>Another approach that does not require the Azure SDK, is  URL access, the same as for <code>azcopy</code>  via the <code>requests</code> library.  For example, to download a CSV file from cloud storage, generate a SAS URL just for that file in the portal, and run this code</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">azure_url</span> <span class="o">=</span> <span class="s2">&quot;https://cf21billspatstorage.blob.core.windows.net/from-hpcc/airlinedata_2008.csv?sp=racwdl&amp;st.... etc&quot;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># see note below*</span>
+<span class="k">with</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">azure_url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
+  <span class="n">lines</span> <span class="o">=</span> <span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">iter_lines</span><span class="p">())</span>
+  <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+     <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 
-<h2 id="about-computing-what-is-a-server">About Computing: What is a server?</h2>
-<p>Cloud computing started with, and frequently talks about  "<em>servers</em>," so we should define that. </p>
-<p>A server is any computer running software that listens for, and responsed to, messages.  For a server to be useful it should be connected to a network but it doesnt' need to be.  Some terms:
- - The 'server' is actually the software, not the hardware.  You can run a server on your laptop. 
- - The computer that runs the software is the 'host'
- - A 'client' is software sends the message, and receives and interprets the response. <br />
- - the protocol is the method by which you exchange messages.   Now it is almost exclusively web (http) but there are many others
- - the form the input message can take, and the form of the message that is returned is known as the API of the server.  it's the interface that you have to work with. 
- - port: a computer may run many servers for internal and external use.  Unix devised a system of numbered 'ports' (nbumber 01 to 64K), and when running a server you must tell the server which port to listen for messages.  Users of most software never have to know or think about ports.  </p>
-<p>The 'Client/server' model invented in the 60s is so successful that we use servers for our daily lives and don't think about it (except when the server is down).  This model of computing is important because it's at the basis for of cloud computing.  </p>
-<p>We often think of a server as a box, but in the model above, the server is in the software layer, but each of layers below provides services for that software to exchange messages with another computer.   If you can abstract, virtualize or automate the layers below, it becomes much easier to provision servers than to purchase, install and configure physical hardware.   </p>
-<h3 id="example-server">Example Server</h3>
-<p>A Web server is a well known, easy to use, and very useful server to run.  The terms above translate as follows:</p>
+<span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
 <ul>
-<li>server is any machinge (including your laptop) running a program that listens for http messages on port 80. client is a web browser</li>
-<li>message:URL which includes address, url paths, and additional parameters <!-- this is only part of the message but is a necessary part --></li>
-<li>response: several headers including the status of the request (that we rarely see) and ultimatley the contents of the web page</li>
-<li>client interprets the code and renders the page.   </li>
-<li>an alternate client could be a script, or the <code>curl</code> utility</li>
-<li><code>https://www.amazon.com/dp/B09VXBNTJ1/ref=sr_1_93?brr=1</code></li>
-</ul>
-<p>What is the host in this URL?  What is the message?  We could spend a week talking about web servers, protocols and a year about programming web server.  The important thing is that  there is a host computer, the 'web server' software on the host listening for requests, and the client(s) connecting to it to retrieve files. </p>
-<h3 id="other-types-of-servers">Other Types of Servers</h3>
-<ul>
-<li><strong>Database</strong> Client: special database client (not web browser) sends data commands as messages, response is tabular outputs</li>
-<li><strong>File Servers</strong>  Share files.  We use Cloud file sync services, but </li>
-<li><strong>Collaboration</strong> Email, calendaring etc</li>
-<li><strong>Enterprise Data Systems</strong> for loading, cataloging, transforming business data</li>
-<li><strong>Security</strong> Firewalls, Proxy, network traffic management</li>
-<li><strong>Monitoring</strong> system health data collection, accessible via another web server</li>
-<li><strong>Web-based services</strong> For example D2L.  </li>
-</ul>
-<p>Many of these do not use web-based protocols or connections.   They define their own protocols, either as a public standard (e.g. email) or proprietary standard (database)</p>
-<h3 id="servers-and-networks">Servers and Networks</h3>
-<p><strong>Networking Requirements to access a server:</strong></p>
-<ul>
-<li>the server must be on the same network as you to receive your message 
-  <em>I can run a web server right on my laptop, but you couldn't reach it.  the network is me talking to myself</em></li>
-<li>the more accessible the network, the more vulnerable, so partitioning is used</li>
-<li>servers that accept messages from the Internet are a major security risk</li>
-<li>network failure stops all work for everyone</li>
-<li>designing efficient, robust, and secure networks is a major resource drain</li>
-</ul>
-<p>Why do I think this is important?  not only can you make a server (web, data, cluster, etc with cloud but everything you interact with in cloud is a server.  You will see many services dedicated to networking in the cloud.  </p>
-<p>On our campus, the network is managed by the institution, and it is configured to block all incomming traffic to prevent anyone from running a server which is a security risk. </p>
-<h2 id="too-much-hardware-virtualization-to-the-rescue">Too much hardware? Virtualization to the rescue</h2>
-<p>If you run a big IT Department that services 1000s of people, you need a lot of servers.   Each server can only handle a certain amount of 'traffic.'  Hence there are many methods for connecting multiple servers to act as one big server.  Each physical machine requires 1) installation 10) maintainence.  </p>
-<ul>
-<li>IT Departments 'serve' large user communities with large amounts of infrastructure.  Techniques were invented to separate the 'server' or 'network' from the hardware.   </li>
-<li>Virtualization: single box with a layer of software to share among different software. </li>
-<li>Many servers could be created and managed with software on a single hardware  </li>
-<li>Virtualization was a necessary conceptual and technological innovation to pave the way for cloud computing and is widely used both on-premise and in the cloud.</li>
-<li>Networks and other services followed suit: create single big computers that uses 'virtualization' software to emulate the functioning of a service, such that the clients don't know  they are not working with an abstraction.    Running different wires to connect different things is labor intensive.   </li>
+<li>don't put this code into github with the SAS url.  Use a technique to read from command line or environment </li>
+<li>This would work anywhere, not just the HPC.  </li>
+<li>This is the same example in the slides for this session</li>
 </ul>
 
 
@@ -1452,10 +1489,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>

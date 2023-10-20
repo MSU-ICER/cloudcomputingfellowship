@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../exercise_create_storage_account/">
+        <link rel="prev" href="../exercise_using_the_cloud_to_summarize_and_visualize_data/">
       
       
-        <link rel="next" href="../exercise_vm_via_cli/">
+        <link rel="next" href="../exercise_windows_filestorage/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Session 3 exercise - analyzing data on a VM - MSU Cloud Computing Fellowship</title>
+        <title>Exercise vm via cli - MSU Cloud Computing Fellowship</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercise-using-the-cloud-to-summarize-and-visualize-data" class="md-skip">
+        <a href="#cli-interface-tutorial-exercise" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Session 3 exercise - analyzing data on a VM
+              Exercise vm via cli
             
           </span>
         </div>
@@ -429,6 +429,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../exercise_using_the_cloud_to_summarize_and_visualize_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Session 3 exercise - analyzing data on a VM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -437,14 +457,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Session 3 exercise - analyzing data on a VM
+    Exercise vm via cli
   </span>
   
 
@@ -455,7 +473,7 @@
         
   
   <span class="md-ellipsis">
-    Session 3 exercise - analyzing data on a VM
+    Exercise vm via cli
   </span>
   
 
@@ -467,8 +485,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -477,51 +493,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#cli-interface-tutorial-exercise" class="md-nav__link">
+    CLI Interface Tutorial / Exercise
+  </a>
+  
+    <nav class="md-nav" aria-label="CLI Interface Tutorial / Exercise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-launch-azure-cloud-shell" class="md-nav__link">
+    First, Launch Azure Cloud Shell
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#process" class="md-nav__link">
-    Process
+        
+          <li class="md-nav__item">
+  <a href="#exploratory-commands" class="md-nav__link">
+    Exploratory  Commands
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    Output
+        
+          <li class="md-nav__item">
+  <a href="#try-running-the-following-commands" class="md-nav__link">
+    Try running the following commands
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#data" class="md-nav__link">
-    Data
+        
+          <li class="md-nav__item">
+  <a href="#complete-example-commands-using-my-resource-group" class="md-nav__link">
+    Complete example commands (using my resource group)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#code" class="md-nav__link">
-    Code
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References:
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#task-details" class="md-nav__link">
-    Task Details
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#due-dates" class="md-nav__link">
-    Due dates
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -529,26 +544,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exercise_vm_via_cli/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exercise vm via cli
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1211,8 +1206,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1221,51 +1214,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#cli-interface-tutorial-exercise" class="md-nav__link">
+    CLI Interface Tutorial / Exercise
+  </a>
+  
+    <nav class="md-nav" aria-label="CLI Interface Tutorial / Exercise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-launch-azure-cloud-shell" class="md-nav__link">
+    First, Launch Azure Cloud Shell
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#process" class="md-nav__link">
-    Process
+        
+          <li class="md-nav__item">
+  <a href="#exploratory-commands" class="md-nav__link">
+    Exploratory  Commands
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    Output
+        
+          <li class="md-nav__item">
+  <a href="#try-running-the-following-commands" class="md-nav__link">
+    Try running the following commands
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#data" class="md-nav__link">
-    Data
+        
+          <li class="md-nav__item">
+  <a href="#complete-example-commands-using-my-resource-group" class="md-nav__link">
+    Complete example commands (using my resource group)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#code" class="md-nav__link">
-    Code
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References:
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#task-details" class="md-nav__link">
-    Task Details
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#due-dates" class="md-nav__link">
-    Due dates
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1284,48 +1276,190 @@
                   
 
 
-<h1 id="exercise-using-the-cloud-to-summarize-and-visualize-data">Exercise: using the cloud to summarize and visualize data.</h1>
-<h2 id="overview">Overview</h2>
-<p>The basic task of this project is analyze data in the cloud: copying data and code to the cloud, and using cloud computing to run a basic script, and save the output to cloud storage.  We provide the data and the code (in R and Python ) with clear description of how to run it.</p>
-<p>The goal is to assess whether the structure of this material was sufficient (did we do our jobs?), that you were able to synthesize it, and hence you as a fellow are ready to take on a cloud project.  </p>
-<p>The goal is not to determine your ability to run code (which you most like can already do!), use git, use the command line, or to be a systems admin but just to assess what piiece of this small puzzle we may need to reinforce.   All steps should be able to be completed without having to write any code at all, except tp run the program.  We hope this unified exercise helps fill any gaps in practical and potentially practical understanding of how computing in the cloud works.   Or, even better, that it's so easy that it seems like busy work. </p>
-<h2 id="process">Process</h2>
-<p>We are here to help along the way, and happy to answer any an all questions.   The goal is to not present a step by step tutorial but to provide guidelines for how you should approach the problem.   If you have issues it would be very help to us for you to review the course materials to determine if we've provided the information or links to the information to know if we need to augment these materials.  However we will aways answer your questions as they come up. </p>
-<p>If you review this and find it very easy, you want to use something other than a VM to do calculations, or have code and data of your own you'd like to run, that is great!    The goal is to help you accomplish a computation in a way that you may use in your project.   </p>
-<h2 id="output">Output</h2>
-<p>We ask that you prepare a short, informal description of the resources you used, how you used them to move data and execute code, and the costs associated with those resources.   In addition any technical challenges, lack of clear documentation,  or any other issues that needed to be overcome to complete this will be helpful to us. </p>
-<h2 id="data">Data</h2>
-<p>The data is a simple CSV file of approximately 450,000 weather observations near the MSU campus.   Details about the data file and it's origin are documented in the code site linked below.   In addition a direct link for downloading the suggested data set will be sent to the fellows in email.   While the data is in the public domain, for each download there is a small cost.  Hence we are not posting the URL on this  public site to prevent bots from repeatedly downloading the file. </p>
-<h2 id="code">Code</h2>
-<p>The code we suggest you run is available on Github: <a href="https://github.com/msucloudfellowship/msu_ccf_miniproject">https://github.com/msucloudfellowship/msu_ccf_miniproject</a> There is a Python and an R version.  The data is not in the github repository, but you should have recieved a link to download it, and there are instructions and code for downloading the data from the source for Lansing or other weather stations. </p>
-<h2 id="task-details">Task Details</h2>
-<p>We expect you to create the following elements. If you already have some of these cloud resources, of course it's more efficient to re-use those but we want to get a cost element for all aspects, so we recommend creating a new resources (e..g. a new storage account) for this mini project.  </p>
-<p>You can use the Azure portal to accomplish many if not not all of these tasks, excpet to run your actual program,</p>
+  <h1>Exercise vm via cli</h1>
+
+<h2 id="cli-interface-tutorial-exercise">CLI Interface Tutorial / Exercise</h2>
+<p><em>for the MSU Cloud Computing Fellowship</em></p>
+<p>This tutorial walks through using the CLI with code you can copy, modify and try.   This will run in the Azure portal "cloud shell" if you have set it up to use the CLI interface (not the PowerShell interface)</p>
+<p>You can refer to the original tutorial which is perhaps more clear, but doesn't quite fit our situation : <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli">Quickstart: Create a Linux virtual machine with the Azure CLI</a></p>
+<p>If you follow this - please don't delete your resource group!  </p>
+<p>In the code below, lines that start with <code>#</code> are comments only, but the other lines are commands.  You can copy/paste one command at at time
+into the CLI of the cloud shell.  Since these are long commands, a long command can be broken up using the line-continuation character which is the back-slash <code>\</code> so one command are all the lines until the last one that does not end with a back-slash</p>
+<h3 id="first-launch-azure-cloud-shell">First, Launch Azure Cloud Shell</h3>
+<p>The Azure Cloud Shell is a free interactive shell that you can use to run the steps in this article. It has common Azure tools preinstalled and configured to use with your account.</p>
+<p>To open the Cloud Shell, just select Try it from the upper right corner of a code block. You can also open Cloud Shell in a separate browser tab by going to <a href="https://shell.azure.com/bash">https://shell.azure.com/bash</a>. Select Copy to copy the blocks of code, paste it into the Cloud Shell, and select Enter to run it.</p>
+<h3 id="exploratory-commands">Exploratory  Commands</h3>
+<p>The Azure CLI command line always starts with the base command <code>az</code> and is followed by the type of resource you are working with, followed by 
+the subcommand you are running, followed by additional options.    </p>
+<p>If you are running these on your computer, you will first have to run the command <code>az login</code>   You may not have to do this
+if you are using the Azure portal cloud shell (since you are already logged in)</p>
+<p>To see the Azure account you are currently running in, try </p>
+<p><code>az account show</code></p>
+<p>example output (in JSON format):
+<div class="highlight"><pre><span></span><code>{
+  &quot;environmentName&quot;: &quot;AzureCloud&quot;,
+  &quot;homeTenantId&quot;: &quot;22177130-642f-41d9-9211-74237ad5687d&quot;,
+  &quot;id&quot;: &quot;45155965-8c04-4910-b30d-900000b9c631&quot;,
+  &quot;isDefault&quot;: true,
+  &quot;managedByTenants&quot;: [],
+  &quot;name&quot;: &quot;MSU Cloud Computing Fellowship&quot;,
+  &quot;state&quot;: &quot;Enabled&quot;,
+  &quot;tenantId&quot;: &quot;22177130-642f-41d9-9211-74237ad5687d&quot;,
+  &quot;user&quot;: {
+    &quot;name&quot;: &quot;billspat@msu.edu&quot;,
+    &quot;type&quot;: &quot;user&quot;
+  }
+}
+</code></pre></div></p>
+<p>To see the list of storage accounts you have access to, try the following command. </p>
+<p>Before running these command, we've used you really need to edit anything that you see in angle brackets.  For example, where
+you see <code>&lt;mygroupname&gt;</code> put in your actual resource group name.  </p>
+<p><code>az storage account list -g &lt;mygroupname&gt;</code></p>
+<p>The documentation for this command  and others related to storage accounts is here: <br>
+ <a href="https://learn.microsoft.com/en-us/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-show">https://learn.microsoft.com/en-us/cli/azure/storage/account?view=azure-cli-latest#az-storage-account-show</a></p>
+<p>An example command they give looks like this: </p>
+<p><code>az storage account show -g MyResourceGroup -n MyStorageAccount</code></p>
+<p>In their examples, you just have to know that you need to replace your group and storage account names for the parameters. </p>
+<h3 id="try-running-the-following-commands">Try running the following commands</h3>
+<p>Before running these commands you really need to edit anything that you see in angle brackets.  For example, where
+you see <code>&lt;mygroupname&gt;</code> put in your actual resource group name.  </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># create a VM and all of the items needed for it  : OS Disk, network security group, etc.  </span>
+<span class="c1"># replace the names with your own group and other names.  </span>
+<span class="c1"># Remember to change the group and VM name</span>
+
+az<span class="w"> </span>vm<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--resource-group<span class="w"> </span>&lt;mygroupname&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>&lt;mytestvm&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--image<span class="w"> </span>Debian11<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--public-ip-sku<span class="w"> </span>Standard<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--admin-username<span class="w"> </span>azureuser<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tags<span class="w"> </span><span class="s1">&#39;activity=cli_tutorial&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--generate-ssh-keys
+</code></pre></div>
+<p>Here is a real example command for my own resource group: </p>
+<div class="highlight"><pre><span></span><code>az vm create \
+ --resource-group ccf23_billspat \
+ --name billspat-tutorial-vm \
+ --image Debian11 \
+ --public-ip-sku Standard
+ --admin-username billspat \
+ --tags &#39;activity=cli_tutorial&#39; \
+ --generate-ssh-keys
+</code></pre></div>
+<p>The output will look something like this: </p>
+<p><div class="highlight"><pre><span></span><code>{
+  &quot;fqdns&quot;: &quot;&quot;,
+  &quot;id&quot;: &quot;/subscriptions/047e742e-cb26-41e6-a9d6-9d42c67f43e6/resourceGroups/ccf22_billspat/providers/Microsoft.Compute/virtualMachines/billspat-tutorial-vm&quot;,
+  &quot;location&quot;: &quot;northcentralus&quot;,
+  &quot;macAddress&quot;: &quot;00-22-48-8F-48-C2&quot;,
+  &quot;powerState&quot;: &quot;VM running&quot;,
+  &quot;privateIpAddress&quot;: &quot;10.4.0.5&quot;,
+  &quot;publicIpAddress&quot;: &quot;20.236.78.140&quot;,
+  &quot;resourceGroup&quot;: &quot;ccf23_billspat&quot;,
+  &quot;zones&quot;: &quot;&quot;
+}
+</code></pre></div>
+Copy and paste that somewhere for reference last. </p>
+<p><strong>Now give that VM a purpose and install a web server</strong>.  There are many webserver that you can install, but nginx is easy to install and open source.  You can do this in two ways</p>
+<p>1) use the CLI to run a command on the VM directly
+<div class="highlight"><pre><span></span><code>az vm run-command invoke \
+   --resource-group &lt;mygroupname&gt; \
+   --name &lt;mytestvm&gt; \
+   --command-id RunShellScript \
+   --scripts &quot;sudo apt-get update &amp;&amp; sudo apt-get install -y nginx&quot;
+</code></pre></div></p>
+<p>2) use SSH to connect to the VM and run it directly.  that will be for another tutorial! </p>
+<p>The output from the command above will be something like</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ProvisioningState/succeeded&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;displayStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Provisioning succeeded&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Info&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">&quot;Enable succeeded: \n[stdout]\ne libnginx-mod-http-xslt-filter.\r\nPreparing to unpack .../23-libnginx-mod-http-xslt-filter_1.14.2-2+deb10u4_amd64.deb ...\r\nUnpacking libnginx-mod-http-xslt-filter (1.14.2-2+deb10u4) ...\r\nSelecting previously unselected package libnginx-mod-mail.\r\nPreparing to unpack .../24-libnginx-mod-mail_1.14.2-2+deb10u4_amd64.deb ...\r\nUnpacking libnginx-mod-mail (1.14.2-2+deb10u4) ...\r\nSelect  etc</span>
+</code></pre></div>
+<p><strong>Open port 80 for web traffic</strong></p>
+<p>By default, only SSH connections are opened when you create a Linux VM in Azure. Use az vm open-port to open TCP port 80 for use with the NGINX web server:</p>
+<div class="highlight"><pre><span></span><code>az<span class="w"> </span>vm<span class="w"> </span>open-port<span class="w"> </span>--port<span class="w"> </span><span class="m">80</span><span class="w"> </span>--resource-group<span class="w"> </span>mygroupname<span class="w"> </span>--name<span class="w"> </span>mytestvm
+</code></pre></div>
+<p><strong>check that it's working</strong></p>
+<p>Put the IP address from the output above (or use the portal to find it) into your browser to see if you can connect,. If so, then great!  you've just built a web server.   </p>
+<p><strong>Delete everything</strong></p>
+<p>You can't delete your how resource group, but luckily we used tags to create the VM so we can just delete resource by tag. </p>
+<p>You can use the portal to delete these resources, but if here are commands to do it with the CLI.  You can delete things by name, like this</p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>az<span class="w"> </span>vm<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--resource-group<span class="w"> </span>mygroup<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>myvm
+</code></pre></div>
+<p>but every resource has a unique ID, and can be deteled using that ID with the command 
+<code>az resource delete --ids IDVALUE</code>   You can get those IDs using <code>az resource list...</code></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># list all resources just created  (change the tag to match what you used if necessary)</span>
+az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--tag<span class="w"> </span><span class="nv">activity</span><span class="o">=</span>cli_tutorial
+
+<span class="c1"># The CLI can filter and change the format of it&#39;s output</span>
+<span class="c1"># list ONLY the resource IDs using the &quot;query&quot; and tabular output</span>
+az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--tag<span class="w"> </span><span class="nv">activity</span><span class="o">=</span>cli_tutorial<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;[].id&quot;</span><span class="w"> </span>-o<span class="w"> </span>table
+
+<span class="c1"># delete them all using a shell loop (tsv does not output a header line)</span>
+<span class="nv">IDS</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--tag<span class="w"> </span><span class="nv">activity</span><span class="o">=</span>cli_tutorial<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;[].id&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<span class="k">for</span><span class="w"> </span>id<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$IDS</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>az<span class="w"> </span>resource<span class="w"> </span>delete<span class="w"> </span>--ids<span class="w"> </span><span class="nv">$id</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</code></pre></div>
+<h3 id="complete-example-commands-using-my-resource-group">Complete example commands (using my resource group)</h3>
+<div class="highlight"><pre><span></span><code>az<span class="w"> </span>vm<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--resource-group<span class="w"> </span>ccf22_billspat<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>billspat-tutorial-vm<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--image<span class="w"> </span>Debian<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--public-ip-sku<span class="w"> </span>Standard<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--admin-username<span class="w"> </span>billspat<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tags<span class="w"> </span><span class="s1">&#39;activity=cli_tutorial&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--generate-ssh-keys
+
+<span class="c1"># copy and paste the output of that</span>
+
+az<span class="w"> </span>vm<span class="w"> </span>run-command<span class="w"> </span>invoke<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>--resource-group<span class="w"> </span>ccf22_billspat<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>--name<span class="w"> </span>billspat-tutorial-vm<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>--command-id<span class="w"> </span>RunShellScript<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>--scripts<span class="w"> </span><span class="s2">&quot;sudo apt-get update &amp;&amp; sudo apt-get install -y nginx&quot;</span>
+
+az<span class="w"> </span>vm<span class="w"> </span>open-port<span class="w"> </span>--port<span class="w"> </span><span class="m">80</span><span class="w"> </span>--resource-group<span class="w"> </span>ccf22_billspat<span class="w"> </span>--name<span class="w"> </span>billspat-tutorial-vm
+
+<span class="c1"># list all resources just created </span>
+az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--tag<span class="w"> </span><span class="nv">activity</span><span class="o">=</span>cli_tutorial
+
+<span class="c1"># list ONLY the resource IDs using the &quot;query&quot; and tabular output</span>
+az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--tag<span class="w"> </span><span class="nv">activity</span><span class="o">=</span>cli_tutorial<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;[].id&quot;</span><span class="w"> </span>-o<span class="w"> </span>table
+
+<span class="c1"># delete them all using a shell loop (tsv does not output a header line)</span>
+<span class="nv">IDS</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--tag<span class="w"> </span><span class="nv">activity</span><span class="o">=</span>cli_tutorial<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;[].id&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<span class="k">for</span><span class="w"> </span>id<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$IDS</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>az<span class="w"> </span>resource<span class="w"> </span>delete<span class="w"> </span>--ids<span class="w"> </span><span class="nv">$id</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</code></pre></div>
+<p><strong>bonus points</strong>: set shell variables for the resource group and name and use them in the commands.  For example </p>
+<div class="highlight"><pre><span></span><code><span class="nv">RG</span><span class="o">=</span>ccf22_billspat
+<span class="nv">VMNAME</span><span class="o">=</span>billspat-tutorial-vm
+az<span class="w"> </span>vm<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--resource-group<span class="w"> </span><span class="nv">$RG</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span><span class="nv">$VMNAME</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--image<span class="w"> </span>Debian<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--public-ip-sku<span class="w"> </span>Standard<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--admin-username<span class="w"> </span>billspat<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tags<span class="w"> </span><span class="s1">&#39;activity=cli_tutorial&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--generate-ssh-keys
+
+<span class="c1"># ... do other stuff, then delete</span>
+
+<span class="w"> </span>az<span class="w"> </span>vm<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--resource-group<span class="w"> </span><span class="nv">$RG</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span><span class="nv">$VMNAME</span>
+</code></pre></div>
+<h3 id="references">References:</h3>
 <ul>
-<li>create cloud storage (account, etc)</li>
-<li>copy data into storage</li>
-<li>create and start a Virtual Machine (VM) that can run this code.   The instructions refer to the Azure data science virtual machine, which we discussed in the session "how to cloud" . You may also use container services (e.g. Azure Container Instance) to run this code if you like. </li>
-<li>hint: consider using tags to uniquely identify resources you are creating for this project to easily identify all resources used for 1) cost analysis 2) deleting</li>
-<li>connect and log-in to the VM, and get the scripts into the machine, install software as needed</li>
-<li>copy the data from storage to the virtual machine disk, </li>
-<li>by attaching the storage to the compute service and access via that connect</li>
-<li>or otherwise copy the data (hint: the DSVM comes with the Azure storage explorer installed)</li>
-<li>run script while pointing to the data file location<ul>
-<li>this will output images of plots (PDF or PNG formatted)</li>
+<li>Quickstart: Create a Linux virtual machine with the Azure CLI <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli">https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli</a></li>
+<li>Azure Command-Line Interface (CLI) documentation <a href="https://learn.microsoft.com/en-us/cli/azure/">https://learn.microsoft.com/en-us/cli/azure/</a></li>
+<li>All <code>az vm...</code> command options : <a href="https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest">https://learn.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest</a></li>
+<li>Use tags to organize your Azure resources (with the Azure CLI)! <a href="https://techcommunity.microsoft.com/t5/azure/use-tags-to-organize-your-azure-resources-with-the-azure-cli/m-p/1798955">https://techcommunity.microsoft.com/t5/azure/use-tags-to-organize-your-azure-resources-with-the-azure-cli/m-p/1798955</a></li>
+<li></li>
 </ul>
-</li>
-<li>save output files to cloud storage</li>
-<li>turn off delete resources related to the VM</li>
-<li>determine total costs. See the <a href="../../topics/azure_cloud_cost_basics/">topic on costs</a><ul>
-<li>if you commplete this in less than a day, the costs for these resources will not be immediately visible in the Azure cost analysis tool.  Potentially wait until next day to view the costs in the Azure portal. </li>
-<li>This analysis was very small, so the costs will be very very small. </li>
-<li>uses the outputs from the costs analysis to add a list of resources and costs to your report.</li>
-<li>As mentioned above, if you use unique tags when creating the virtual machine it will be easier to identify costs specific to this activity</li>
-</ul>
-</li>
-</ul>
-<h2 id="due-dates">Due dates</h2>
-<p>The due date will be discussed in the email but they are flexible.   </p>
 
 
 

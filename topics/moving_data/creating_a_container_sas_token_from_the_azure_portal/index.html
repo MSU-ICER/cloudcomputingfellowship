@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../../the_computing_in_cloud_computing/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../how_to_hpc_and_cloudstorage/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>MSU Cloud Computing Fellowship</title>
+        <title>Creating a Storage Account SAS token - MSU Cloud Computing Fellowship</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -42,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,6 +70,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#creating-a-storage-account-sas-token" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -78,7 +87,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="MSU Cloud Computing Fellowship" class="md-header__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
+    <a href="../../.." title="MSU Cloud Computing Fellowship" class="md-header__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -98,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Creating a Storage Account SAS token
             
           </span>
         </div>
@@ -172,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="MSU Cloud Computing Fellowship" class="md-nav__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
+    <a href="../../.." title="MSU Cloud Computing Fellowship" class="md-nav__button md-logo" aria-label="MSU Cloud Computing Fellowship" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -189,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -208,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/about/" class="md-nav__link">
+      <a href="../../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -227,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cloud_glossary/" class="md-nav__link">
+      <a href="../../../cloud_glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -246,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/contact/" class="md-nav__link">
+      <a href="../../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/projects/" class="md-nav__link">
+      <a href="../../../projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -320,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/azure_portal_walkthrough/" class="md-nav__link">
+      <a href="../../../exercises/azure_portal_walkthrough/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -340,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/azure_vm_walkthrough/" class="md-nav__link">
+      <a href="../../../exercises/azure_vm_walkthrough/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/azure_windows_vm_walkthrough/" class="md-nav__link">
+      <a href="../../../exercises/azure_windows_vm_walkthrough/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -380,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/exercise_budget_alert/" class="md-nav__link">
+      <a href="../../../exercises/exercise_budget_alert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/exercise_create_storage_account/" class="md-nav__link">
+      <a href="../../../exercises/exercise_create_storage_account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -420,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/exercise_using_the_cloud_to_summarize_and_visualize_data/" class="md-nav__link">
+      <a href="../../../exercises/exercise_using_the_cloud_to_summarize_and_visualize_data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -440,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/exercise_vm_via_cli/" class="md-nav__link">
+      <a href="../../../exercises/exercise_vm_via_cli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/exercise_windows_filestorage/" class="md-nav__link">
+      <a href="../../../exercises/exercise_windows_filestorage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/exercises/storage_pricing_exercise/" class="md-nav__link">
+      <a href="../../../exercises/storage_pricing_exercise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/references/" class="md-nav__link">
+      <a href="../../../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sessions/01_introduction/" class="md-nav__link">
+      <a href="../../../sessions/01_introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sessions/02_how_to_cloud/" class="md-nav__link">
+      <a href="../../../sessions/02_how_to_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sessions/03_cloud_storage/" class="md-nav__link">
+      <a href="../../../sessions/03_cloud_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -666,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sessions/04_organization/" class="md-nav__link">
+      <a href="../../../sessions/04_organization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -691,18 +700,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -716,7 +727,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Topics
@@ -729,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -749,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/azure_cloud_cost_basics/" class="md-nav__link">
+      <a href="../../azure_cloud_cost_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -769,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/azure_organization/" class="md-nav__link">
+      <a href="../../azure_organization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/azure_tags/" class="md-nav__link">
+      <a href="../../azure_tags/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -809,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/iam/" class="md-nav__link">
+      <a href="../../iam/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -829,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/intro_aspects_of_cloud_computing/" class="md-nav__link">
+      <a href="../../intro_aspects_of_cloud_computing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -849,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/intro_to_cloud_interfaces/" class="md-nav__link">
+      <a href="../../intro_to_cloud_interfaces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -869,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/learning_how_to_learn_about_cloud/" class="md-nav__link">
+      <a href="../../learning_how_to_learn_about_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -889,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/monitoring_in_azure/" class="md-nav__link">
+      <a href="../../monitoring_in_azure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -909,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/service_level_model_of_cloud/" class="md-nav__link">
+      <a href="../../service_level_model_of_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -929,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/staying_organized_in_azure/" class="md-nav__link">
+      <a href="../../staying_organized_in_azure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -949,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/the_computing_in_cloud_computing/" class="md-nav__link">
+      <a href="../../the_computing_in_cloud_computing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -967,18 +978,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_13" checked>
         
           
           <label class="md-nav__link" for="__nav_9_13" id="__nav_9_13_label" tabindex="0">
@@ -992,7 +1005,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_13_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_13_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_13">
             <span class="md-nav__icon md-icon"></span>
             Moving data
@@ -1003,9 +1016,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/topics/moving_data/creating_a_container_sas_token_from_the_azure_portal/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Creating a Storage Account SAS token
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1014,6 +1047,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#for-allowing-access-to-storage-from-another-service-or-person" class="md-nav__link">
+    for allowing access to storage from another service or person
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1025,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/moving_data/how_to_hpc_and_cloudstorage/" class="md-nav__link">
+      <a href="../how_to_hpc_and_cloudstorage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1045,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/moving_data/moving_data_in_cloud/" class="md-nav__link">
+      <a href="../moving_data_in_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1065,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/topics/moving_data/moving_data_with_url_activity/" class="md-nav__link">
+      <a href="../moving_data_with_url_activity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1111,6 +1178,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#for-allowing-access-to-storage-from-another-service-or-person" class="md-nav__link">
+    for allowing access to storage from another service or person
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1122,8 +1213,83 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="creating-a-storage-account-sas-token">Creating a Storage Account SAS token</h1>
+<h3 id="for-allowing-access-to-storage-from-another-service-or-person">for allowing access to storage from another service or person</h3>
+<p>How can you provide another person't account, or more frequently an Azure service of some kind access to your storage account.   Granting access to each different service one by one may not be feasible,  Instead you can provide the service (or user) a special code that allows access.  One such code in Azure is a "shared access signature" (SAS).  You to the end of a storage URL To grant access to the storage acccount without having to log-in.  This is necessary when you want to copy data into storage account using another service or processs, for example copying files from your computer (or the HPC) to storage using the <code>azcopy</code> command.   </p>
+<p>You need to  create this token from a command or from the portal for each container (or even one for each blob) with parameters including an expiration time and the address of where you are accessing it from.  There are other ways to grant access to an azure storage container, but here is the documentation from Azure: <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview">Grant limited access to Azure Storage resources using shared access signatures (SAS)</a></p>
+<p>To generate a SAS token using the Azure portal (service SAS): </p>
+<ul>
+<li>
+<p>in the Portal, navigate to your storage account → containers → your container</p>
+</li>
+<li>
+<p>On the left side, click "Shared access Tokens"</p>
+</li>
+<li>
+<p>on the form for SAS token enter values as follows: </p>
+</li>
+<li>
+<p>Signing method : "Account Key" (this is the default and should be selected)</p>
+</li>
+<li>
+<p>Signing key : could be either Key 1 or Key 2</p>
+</li>
+<li>
+<p>Permissions : </p>
+</li>
+<li>click in the box that says "read" to see the list of permissions</li>
+<li>if you are copying from HPC to Azure, check all the boxes</li>
+<li>
+<p>if you are copying from Azure to HPC, check Read and perhaps List</p>
+</li>
+<li>
+<p>Specify the signed key Start and Expiry times.  </p>
+</li>
+<li>The key is temporary, and defaults to 24hrs.  </li>
+<li>You may want to change the "expiry" date to one a few days in the future, or </li>
+<li>
+<p>for a month or so if you'll be using azcopy to transfer files for the semester.   If you specify a long time, you should restrict the IP address access (see below)</p>
+</li>
+<li>
+<p>The allowed IP addresses field is optional and specifies an IP address or a range of IP addresses from which to accept requests. If the request IP address doesn't match the IP address or address range specified on the SAS token, it won't be authorized, so it must be correct.   </p>
+</li>
+<li>If you want to be extra secure and restrict to systems you are copying your data from.  For example your own computer</li>
+<li>If you are using MSU ICER, as of Fall 2021 this IP range should include all ICER/HPCC gateways : 35.9.12.1-35.9.12.255</li>
+<li>You could also use the MSU VPN address range and restrict to systems logged in via VPN.  Find that from IT Services</li>
+<li>For your or a colleague computer, google "what's my IP" to get your IP address</li>
+<li>
+<p>If you have authorization issues, then leave the IP field blank, but suggest limiting the time the key is active since anyone in the world could use it</p>
+</li>
+<li>
+<p>Allowed protocols: leave at HTTPS (do not select HTTP and HTTPS as HTTP is not secure)</p>
+</li>
+<li>
+<p>Click Generate SAS token and URL.</p>
+</li>
+</ul>
+<p>The Blob SAS token query string and Blob SAS URL will be displayed in the lower area of window.</p>
+<p>Copy the Blob SAS URL (or token or both), and save in a secure location.  They'll only be displayed once and cannot be retrieved once the window is closed.  Treat the SAS token like a temporary password</p>
+<p>You can use the "Blob SAS URL" for most copy operations.  It includes the container but not the file name.  If you want to use a different file name from the original, you'll have to construct your own URL. </p>
+<p>To construct an SAS URL, append the SAS token (URI) to the URL for a storage service as follows</p>
+<div class="highlight"><pre><span></span><code>`https://mystorageaccount.blob.core.windows.net/mycontainername/destination_file_name.ext?reallylongSAStokengoesatend`
+</code></pre></div>
+<p>If you need to change any aspect of this token (the dates, the IP addresses, etc) you have click Generate and get a new token (the old token may still work however)</p>
+<p>See <a href="../how_to_hpc_and_cloudstorage/">How to move data between the MSU HPC and Azure</a> for an example using the <code>azcopy</code> utility</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview#best-practices-when-using-sas">Best practices when using SAS token</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers#create-your-tokens-1">Instructions these are based on (from Azure Cognitive Services)</a></li>
+<li>CLI command to generate SAS token: <a href="https://docs.microsoft.com/en-us/cli/azure/storage/container?view=azure-cli-latest#az_storage_container_generate_sas">https://docs.microsoft.com/en-us/cli/azure/storage/container?view=azure-cli-latest#az_storage_container_generate_sas</a></li>
+</ul>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1151,10 +1317,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tracking"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>
