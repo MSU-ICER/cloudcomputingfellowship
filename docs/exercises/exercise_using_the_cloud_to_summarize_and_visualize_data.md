@@ -57,4 +57,11 @@ You can use the Azure portal to accomplish many if not not all of these tasks, e
 
 The due date will be discussed in the email but they are flexible.   
 
-    
+## Hints
+
+Things you may find helpful when completing this exercise: 
+1. See this link [Mounting an SMB File Share: Windows] (https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows) for help creating the file share and mounting it to your VM
+1. During the tutorial you will need to sign into your fileshare through the VM. NOTE: This is not your Azure username and password. The username is the name of your fileshare and the password is a fileshare key. This can be found by clicking the "Access Keys" tab on the fileshare menu. Press show on the top key and copy that.
+1. Make sure you are working in your fileshare network location, not your C Drive. This can be shown in File Explorer under My PC.
+1. If you run into trouble specifying the path to the hourly_weather.csv file, just move the file into the Python folder. Then you don't have to specify the path, just type the file name.
+1. In order to see the PNG files in your Azure account, make sure to create a snapshot in your file share. (In your file share: Click snapshots, and add Snapshot. The resulting snapshot should include all the files you have in your "Z" (fileshare) drive on the VM)

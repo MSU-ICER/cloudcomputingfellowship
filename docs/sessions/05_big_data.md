@@ -28,12 +28,11 @@ of it of big data, or they have their own parallel systems.  for those that it c
 
 Slide Deck: [Overview of Big Data with Spark for Researchers](../topics/big_data_intro_for_researchers.html)
 
-[Tools And Technologies For The Implementation Of Big Data, Richard J. Self, Dave Voorhis](https://michiganstate.sharepoint.com/sites/MSUICERCloudFellowship2/Shared%20Documents/General/Materials/TOOLS%20AND%20TECHNOLOGIES%20FOR%20THE%20IMPLEMENTATION%20OF%20BIG%20DATA_Self_Vorhis%20CH10%20DO%20NOT%20DISTRIBUTE.pdf)Chapter 10 from "Applications of Big Data for National Security." http://dx.doi.org/10.1016/B978-0-12-801967-2.00010-0 
-Copyright © 2015 Elsevier Inc. All rights reserved.
+[Tools And Technologies For The Implementation Of Big Data, Richard J. Self, Dave Voorhis](https://michiganstate.sharepoint.com/sites/MSUICERCloudFellowship2/Shared%20Documents/General/Materials/TOOLS%20AND%20TECHNOLOGIES%20FOR%20THE%20IMPLEMENTATION%20OF%20BIG%20DATA_Self_Vorhis%20CH10%20DO%20NOT%20DISTRIBUTE.pdf) Chapter 10 from "Applications of Big Data for National Security." Copyright © 2015 Elsevier Inc. All rights reserved.
 
-*PDF copy, for use by Cloud Computing Fellowship only (link is access restricted).  The book is available as an [electronic copy from the MSU Library](http://catalog.lib.msu.edu/record=b11321901~S39a)*
-
-While the book itself is really not of interest to us, this particular chapter is one of the better and more readable introductions to "big data" I've seen, written for professionals like yourselves.    Dr. Self studies ethics and big data for University of Derby in the UK. 
+1. If the previous link did not work, click this link and enter your MSU email. It will give you access to the full chapter: http://dx.doi.org/10.1016/B978-0-12-801967-2.00010-0 
+1. PDF copy, for use by Cloud Computing Fellowship only (link is access restricted).
+1. While the book itself is really not of interest to us, this particular chapter is one of the better and more readable introductions to "big data" I've seen, written for professionals like yourselves.    Dr. Self studies ethics and big data for University of Derby in the UK. 
 
 
 **Textbook: Cloud Computing for Science and Engineering**
