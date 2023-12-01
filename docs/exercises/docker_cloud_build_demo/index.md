@@ -1,6 +1,6 @@
 # Tutorial/Demo : building and running containers on Azure
 
-written for the [MSU Cloud Computing Fellowship](../..) for [Session 6B - Serverless](../../sessions/07_serverless.md)
+written for the [MSU Cloud Computing Fellowship](../../index.md) for [Session 6B - Serverless](../../sessions/06B_serverless.md)
 
 This is a minimal example of building and running a docker container using Azure Container Registry and 
 Azure Container Instances.  Uses the smallest docker file in the world, which simply adds the NLTK python library 

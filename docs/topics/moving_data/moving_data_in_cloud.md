@@ -7,7 +7,7 @@
 # Excercises
 
 - [Exercise: moving data using storage URL](moving_data_with_url_activity.md)
-- [Attaching **Azure Files** to a Virtual machine for reading and writing data](how_to_azure_files.md)
+- [Attaching **Azure Files** to a Virtual machine for reading and writing data](../../exercises/exercise_windows_filestorage.md)
 - Creating and re-using a data disk for virtual machines: [Attach a managed data disk to a Windows VM by using the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal)
 - Linux VMs: command line option using 'scp' command  [Use SCP to move files to and from a Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/copy-files-to-linux-vm-using-scp)
 - [How to move data between the MSU HPC and Azure](how_to_hpc_and_cloudstorage.md) for an example using the `azcopy` utility, and other techniques

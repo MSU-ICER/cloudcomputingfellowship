@@ -50,7 +50,7 @@ Storage accounts are a great way to learn about IAM in Azure.   There are severa
 to anyone but yourself.  We cover some of that in the storage sessions.  
 
 This tutorial is python-specific but quickly lists the 4 types of access and what that means exactly for python code.  
-See the [Interfaces](../sessions/04_interfaces.md) for details about using Python. 
+See the [Interfaces](../sessions/04_organization.md) for details about using Python. 
 
 ## More Background
 

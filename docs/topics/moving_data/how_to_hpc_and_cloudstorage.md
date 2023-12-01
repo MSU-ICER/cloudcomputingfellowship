@@ -99,7 +99,7 @@ If you have some familiarity with Azure data factory, note that a "source" for A
 
 ### Method 4. Python
 
-We won't really cover using Python to copy files to/from blob storage, but see the optional exercise for using Azure cloud storage in Python in [session #3](../session_cloud_storage/index.md).  
+We won't really cover using Python to copy files to/from blob storage, but see the optional exercise for using Azure cloud storage in Python in [session #3](../../sessions/03_cloud_storage.md).  
 
 To use Azure python SDK on the HPC you need to installed the azure python sdk in a python environment in your home directory, for example using the Anaconda distribution of Python.  See https://wiki.hpcc.msu.edu/display/ITH/Using+conda.   
 

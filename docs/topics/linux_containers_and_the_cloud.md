@@ -100,7 +100,7 @@ This describes a really important use case of containers which is to enhance rep
 
 ## Tutorial 
 
-There are many many tutorials, blogs, videos, etc for Container Technology.   That didn't stop me from making one of my own, but geared for you, the researcher: [Docker Tutorial for Researchers featuring Jupyter Lab](docker_tutorial_for_researchers.md). 
+There are many many tutorials, blogs, videos, etc for Container Technology.   That didn't stop me from making one of my own, but geared for you, the researcher: [Docker Tutorial for Researchers featuring Jupyter Lab](../exercises/docker_tutorial_for_researchers.md). 
 
 ## Activities
 
@@ -117,7 +117,7 @@ There are many many tutorials, blogs, videos, etc for Container Technology.   Th
 
 - Jupyter Hub: running Jupyter with everything installed just right can be problematic:  The [Jupyter Stacks Project](https://jupyter-docker-stacks.readthedocs.io/en/latest/) is to create bundles to include everything you need for a particular kind of research.   Note I have not tried to get this running on Azure - could it be done?   Would it be helpful?
 
-- *optional for shell scripters and command line users*: complete this [shell script that launches an Rstudio session on azure container instance](container_scripts/rstudio_container_script.md)
+- *optional for shell scripters and command line users*: [shell scripts that launch Jupyter or Rstudio sessions on azure container instance](../exercises/docker_cloud_build_demo/index.md)   
  
 - Optional training activity: [Introduction to Kubernetes](https://learn.microsoft.com/en-us/training/modules/intro-to-kubernetes/) from Microsoft. 
 

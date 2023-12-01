@@ -38,7 +38,7 @@ For the sake of complete and consistent exercise, we will use a small file and u
 1. Click the "Generate SAS ...URL" button
 1. Copy the Blob SAS URL to the clipboard
 
-![SAS URL Form](../img/activities/storage_sas_url_form.png)
+![SAS URL Form](../../img/storage_sas_url_form.png)
 
 ### Test Download
 

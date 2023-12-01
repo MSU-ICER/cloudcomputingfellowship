@@ -1,6 +1,6 @@
 # Docker Tutorial for Researchers featuring Jupyter Lab
 
-#### for the 2023 MSU Cloud Computing Fellowship Session 7: [Serverless, Containers, and FaaS](../sessions/07_serverless.md)**
+#### for the 2023 MSU Cloud Computing Fellowship Session 7: [Serverless, Containers, and FaaS](../sessions/06B_serverless.md)**
 
 Pat Bills, MSU. 
 
