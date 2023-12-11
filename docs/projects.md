@@ -4,10 +4,16 @@
 
 The primary activity of the Cloud Computing Fellowship is to support the fellows to create and present a cloud-computing-based project working with research data.  During Fall semseter the fellowship provides materials and help to learn core cloud concepts and activies, and Winter/Spring semester is devoted to project development.  
 
+### About Projects
+
+[Project Guide](pdf/CCF_Project_Guide_2023_24.pdf) by Mahmoud Parvizi  (Slides, PDF)
+
 ### Time-line and Due dates
 
-Fellows deliver a proposal for their projects in early January 2024, and present that proposal to their colleagues in the fellowship.   
-See the [schedule](./index.md) for due dates.  In Winter 2024 more detail will be provided on this site. 
+Fellows deliver a written proposal for their projects by January 8, 2024 (5pm) via team.  Fellows prepare 1-2 slides summarizing their proposal, and present to their colleagues in the fellowship on January 12 3pm. 
+
+See the 2023-24 [schedule](./index.md) for additional due dates.  In Winter 2024 more detail will be provided on this site. 
+
  
 ### Questions, Answers and other Notes
 
