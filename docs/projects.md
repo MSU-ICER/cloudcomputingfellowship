@@ -10,10 +10,9 @@ The primary activity of the Cloud Computing Fellowship is to support the fellows
 
 ### Time-line and Due dates
 
-Fellows deliver a written proposal for their projects by January 8, 2024 (5pm) via team.  Fellows prepare 1-2 slides summarizing their proposal, and present to their colleagues in the fellowship on January 12 3pm. 
+Fellows deliver a written proposal for their projects by January 8, 2024 (5pm) via team.  Fellows will prepare slides summarizing their proposal, and present to their colleagues in the fellowship on either January 26, February 9th, or February 23.  We'll have only up to 6 fellows present each day, so that there is plenty of time for discussion and feedback.    
 
 See the 2023-24 [schedule](./index.md) for additional due dates.  In Winter 2024 more detail will be provided on this site. 
-
  
 ### Questions, Answers and other Notes
 
