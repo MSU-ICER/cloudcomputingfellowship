@@ -1,4 +1,12 @@
+---
+title: Comparing Storage vs Databases
+---
+
 # Storage vs Databases
+
+From [Session 6A. Data Servers](../sessions/06A_data_servers.md)
+
+![database vs storage graphic](../img/database_v_storage_diagram.drawio.png)
 
 ## Introduction
 
