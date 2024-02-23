@@ -1231,7 +1231,7 @@
         
   
   <span class="md-ellipsis">
-    Storage vs Databases
+    Comparing Storage vs Databases
   </span>
   
 
@@ -1334,6 +1334,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Storage and data transfer options for VM
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1343,6 +1354,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    Context
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+    <nav class="md-nav" aria-label="Links">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-types" class="md-nav__link">
+    Storage Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-transfer-methods" class="md-nav__link">
+    Data Transfer Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1444,6 +1508,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    Context
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+    <nav class="md-nav" aria-label="Links">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-types" class="md-nav__link">
+    Storage Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-transfer-methods" class="md-nav__link">
+    Data Transfer Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1459,17 +1565,45 @@
 
 <h1 id="storage-and-data-transfer-options-for-vm">Storage and data transfer options for VM</h1>
 <p><em>From <a href="../../../sessions/03_cloud_storage/">Session #3, Cloud Storage</a></em></p>
-<p><img alt="graphic" src="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.png" />  </p>
-<p><a href="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.png">Full size image</a></p>
-<p>Links: </p>
+<h2 id="context">Context</h2>
+<p>When using a cloud machine or service, a standard workflow is: </p>
+<ol>
+<li>Provision: create and prepare resources and services: VM, storage, software installation, etc</li>
+<li>Stage: move code, software, and input data to the VM that will do that computations (execution)</li>
+<li>Execute: set the parameters and run the computation which generates output data onto storage</li>
+<li>Transfer: move (aka transfer) the output to the next phase in your workflow, often your own 'local' computer</li>
+</ol>
+<p>Input and output may be files but it may also be records in a database. </p>
+<p>Here are 5 popular options for Storage+VM in context, with hThere are several types of cloud storage that one may use for staging data that have more or less complex methods working with.   Some storage metho</p>
+<p><a href="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.pdf"><img src="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.png"></a></p>
+<p><em><a href="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.pdf">Full size PDF</a></em></p>
+<h2 id="links">Links</h2>
+<h3 id="storage-types">Storage Types</h3>
+<p><em>These links are provided and described in other parts of session 3</em></p>
+<p><a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction">Azure storage services overview (includes many that are not included in the diagram)</a></p>
 <ul>
-<li><a href="https://azure.microsoft.com/en-us/products/storage/storage-explorer/">Azure Storage Explorer</a> User application for moving data down from and up to Azure cloud storage including disks</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10">the azcopy utility</a>, a command-line utility for moving data to/from your computer to the cloud, or from cloud-to-cloud.   To access Azure Storage accounts
-  you must create and use a special URL that includes a Security Key (a "SAS" key in Azure terms).   </li>
-<li><a href="https://learn.microsoft.com/en-us/azure-data-studio/what-is-azure-data-studio">Azure Data Studio</a>,   a cross-platform application for interacting with databases.  Designed for Micrsoft's branded "SQLServer" but works with many open source databases.  Requires an existing database in the cloud or elsewhere.  There are many open source versions of this kind of database user-interface application: <a href="https://www.eversql.com/top-7-mysql-gui-tools-for-windows/">List of database GUIs</a></li>
-<li><a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?tabs=managed-identity%2Croles-azure-portal%2Csign-in-azure-cli">Quickstart: Azure Blob Storage client library for Python</a></li>
+<li>1 &amp; 2 <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview">Managed Disks</a><ul>
+<li>You can add data disks when you create a VM - see the <a href="../../../exercises/azure_vm_walkthrough/">Azure VM creation walk through</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal">About Disks, and how to specify them using the Azure CLI</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal">you can add a data disk to an existing Windows Virtual machine</a></li>
 </ul>
-<p>Unfortunately the <a href="https://github.com/Azure/AzureR">R libraries that worked with various Azure services</a> have not been worked on for several years and there is no guarantee they will work.   <a href="https://github.com/Azure/AzureStor">AzureStor</a></p>
+</li>
+<li>3 <a href="https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction">Azure Files</a></li>
+<li>4 <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction">Blob Storage</a></li>
+<li>5 <a href="../../storage_vs_databases/">Databases vs Storage</a></li>
+</ul>
+<p>Like VM CPUs, there are way to many choices for a VM disk (primary or auxilliary).   Determine the size you need and find the cheapest 'ssd' type you can. <br />
+If you are not concerned about peformance at all, find the cheapest option for 
+the size you need. </p>
+<h3 id="data-transfer-methods">Data Transfer Methods</h3>
+<ul>
+<li><strong>Desktop Application</strong> <a href="https://azure.microsoft.com/en-us/products/storage/storage-explorer/">Azure Storage Explorer</a> User application for moving data down from and up to Azure cloud storage including disks</li>
+<li><strong>Command Line Application</strong> <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10">the azcopy utility</a>, a command-line utility for moving data to/from your computer to the cloud, or from cloud-to-cloud.   To access Azure Storage accounts
+  you must create and use a special URL that includes a Security Key (a "SAS" key in Azure terms).   </li>
+<li><strong>Python</strong> <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?tabs=managed-identity%2Croles-azure-portal%2Csign-in-azure-cli">Quickstart: Azure Blob Storage client library for Python</a></li>
+<li><strong>R</strong> Unfortunately the <a href="https://github.com/Azure/AzureR">R libraries that worked with various Azure services</a> have not been worked on for several years and there is no guarantee they will work.   <a href="https://github.com/Azure/AzureStor">AzureStor</a></li>
+<li><strong>Database Application</strong> <a href="https://learn.microsoft.com/en-us/azure-data-studio/what-is-azure-data-studio">Azure Data Studio</a>,   a cross-platform application for interacting with databases.  Designed for Micrsoft's branded "SQLServer" but works with many open source databases.  Requires an existing database in the cloud or elsewhere.  There are many open source versions of this kind of database user-interface application: <a href="https://www.eversql.com/top-7-mysql-gui-tools-for-windows/">List of database GUIs</a></li>
+</ul>
 
 
 
