@@ -1,6 +1,7 @@
-
 ---
 title: Storage and data transfer options for VM
+hide:
+  - toc
 ---
 
 # Storage and data transfer options for VM
@@ -8,22 +9,33 @@ title: Storage and data transfer options for VM
 
 ## Context
 
-When using a cloud machine or service, a standard workflow is: 
+When using a cloud machine or service, a typical workflow is: 
 
-1. Provision: create and prepare resources and services: VM, storage, software installation, etc
-2. Stage: move code, software, and input data to the VM that will do that computations (execution)
-3. Execute: set the parameters and run the computation which generates output data onto storage
-4. Transfer: move (aka transfer) the output to the next phase in your workflow, often your own 'local' computer
+1. **Provision**: create and prepare resources and services: VM, storage, software installation, etc
+2. **Stage**: move code, software, and input data to the VM that will do that computations (execution)
+3. **Execute**: set the parameters and run the computation which generates output data onto storage
+4. **Transfer**: move (aka transfer) the output to the next phase in your workflow, often your own 'local' computer
 
 Input and output may be files but it may also be records in a database. 
 
-Here are 5 popular options for Storage+VM in context, with hThere are several types of cloud storage that one may use for staging data that have more or less complex methods working with.   Some storage metho
+Here are 5 popular options for Storage+VM in context, with short description of how to connect and transfer data.   
+This a gradient on the amount of work you have to do to alter your software or code from option 1 (no changes) to option 5 (many changes) 
+
 
 [<img src="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.png">](../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.pdf)
 
 
 *[Full size PDF](Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.pdf)*
 
+
+<!-- | Option | Description | complexity |
+| 1. Primary Disk | added automatically and any software that can save files can use it with no work on your part | low, don't need to change your code |
+| 2. Secondary Data disk | have to add one when creating VM, but can use an existing 'managed disk', works just like primary disk but dedicated to data.  C
+| 3. File storage |   | medum, have to connect using command after VM is created   |
+| 4. Blob Storage |  | | 
+| 5. data storage in a database |  | | 
+
+-->
 
 
 ## Links
@@ -40,6 +52,7 @@ Here are 5 popular options for Storage+VM in context, with hThere are several ty
      - [About Disks, and how to specify them using the Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal)
      - [you can add a data disk to an existing Windows Virtual machine](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal)
 - 3 [Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction)
+     - See the [Storage Session Activities](https://msu-icer.github.io/cloudcomputingfellowship/sessions/03_cloud_storage/#activities) for details about connecting file share to a VM
 - 4 [Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
 - 5 [Databases vs Storage](../../topics/storage_vs_databases.md)
 
