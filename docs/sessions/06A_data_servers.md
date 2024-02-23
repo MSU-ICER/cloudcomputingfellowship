@@ -10,7 +10,12 @@ title: 6A - Data Servers
 
 Data servers (like Relational Databases) can be a powerful tool for even small research projects.   When we say "Data Servers" or "Data Systems"  we mean any server with data processing capabilities that you connect to with a client to send data, commands and receive results.   The most widely used and classic example is the relational database management system (RDBMs) invented in the 1970s, but there are many other types.  A central advantage of data servers is ability to handle many conncurrent connections.  Connections can be from many users, a web application serving many uers, or many other concurrent processes.    Like other systems (such as VMs, File storage servers, big data tools, etc), these data systems don't require cloud computing, but cloud companies offer database services such taht with a few clicks you can have a server that would take a week to provision and years to maintain.  A data server could be a productive addition to your cloud architecturee, or the central aspect of your fellowship project.  
 
-I have use databases with many research projects that had significant data entry burden requiring many work-hours of students typing in data, or shared systems.   
+Databases are used in thosands of research projects that had significant data entry burden requiring many work-hours of students typing in data, or shared systems.   
+
+## Databases vs Storage
+
+A [Comparison of Databases and storage](../topics/storage_vs_databases.md) may help understand the role of a database vs simply keeping your data in files (for example Excel of CSV files). 
+
 
 ## Readings
 
