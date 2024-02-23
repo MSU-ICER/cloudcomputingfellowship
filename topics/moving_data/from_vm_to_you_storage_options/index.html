@@ -172,6 +172,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1496,7 +1498,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1566,17 +1570,27 @@
 <h1 id="storage-and-data-transfer-options-for-vm">Storage and data transfer options for VM</h1>
 <p><em>From <a href="../../../sessions/03_cloud_storage/">Session #3, Cloud Storage</a></em></p>
 <h2 id="context">Context</h2>
-<p>When using a cloud machine or service, a standard workflow is: </p>
+<p>When using a cloud machine or service, a typical workflow is: </p>
 <ol>
-<li>Provision: create and prepare resources and services: VM, storage, software installation, etc</li>
-<li>Stage: move code, software, and input data to the VM that will do that computations (execution)</li>
-<li>Execute: set the parameters and run the computation which generates output data onto storage</li>
-<li>Transfer: move (aka transfer) the output to the next phase in your workflow, often your own 'local' computer</li>
+<li><strong>Provision</strong>: create and prepare resources and services: VM, storage, software installation, etc</li>
+<li><strong>Stage</strong>: move code, software, and input data to the VM that will do that computations (execution)</li>
+<li><strong>Execute</strong>: set the parameters and run the computation which generates output data onto storage</li>
+<li><strong>Transfer</strong>: move (aka transfer) the output to the next phase in your workflow, often your own 'local' computer</li>
 </ol>
 <p>Input and output may be files but it may also be records in a database. </p>
-<p>Here are 5 popular options for Storage+VM in context, with hThere are several types of cloud storage that one may use for staging data that have more or less complex methods working with.   Some storage metho</p>
+<p>Here are 5 popular options for Storage+VM in context, with short description of how to connect and transfer data. <br />
+This a gradient on the amount of work you have to do to alter your software or code from option 1 (no changes) to option 5 (many changes) </p>
 <p><a href="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.pdf"><img src="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.png"></a></p>
 <p><em><a href="../Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.pdf">Full size PDF</a></em></p>
+<!-- | Option | Description | complexity |
+| 1. Primary Disk | added automatically and any software that can save files can use it with no work on your part | low, don't need to change your code |
+| 2. Secondary Data disk | have to add one when creating VM, but can use an existing 'managed disk', works just like primary disk but dedicated to data.  C
+| 3. File storage |   | medum, have to connect using command after VM is created   |
+| 4. Blob Storage |  | | 
+| 5. data storage in a database |  | | 
+
+-->
+
 <h2 id="links">Links</h2>
 <h3 id="storage-types">Storage Types</h3>
 <p><em>These links are provided and described in other parts of session 3</em></p>
@@ -1588,7 +1602,10 @@
 <li><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal">you can add a data disk to an existing Windows Virtual machine</a></li>
 </ul>
 </li>
-<li>3 <a href="https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction">Azure Files</a></li>
+<li>3 <a href="https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction">Azure Files</a><ul>
+<li>See the <a href="https://msu-icer.github.io/cloudcomputingfellowship/sessions/03_cloud_storage/#activities">Storage Session Activities</a> for details about connecting file share to a VM</li>
+</ul>
+</li>
 <li>4 <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction">Blob Storage</a></li>
 <li>5 <a href="../../storage_vs_databases/">Databases vs Storage</a></li>
 </ul>
@@ -1606,6 +1623,8 @@ the size you need. </p>
 </ul>
 
 
+
+  
 
 
 
