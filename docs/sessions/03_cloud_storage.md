@@ -22,11 +22,9 @@ Cloud storage was engineered to save millions of files for millions of users and
 
 [Azure Cloud Storage for Researchers](../topics/azure_cloud_storage_for_researchers.html) (Web browser slide presentation)
 
-
+[Storage Options for a VM, and transfer back to you](../topics/moving_data/from_vm_to_you_storage_options.md)
 
 A [Comparison of Databases and storage](../topics/storage_vs_databases.md) may help understand the role of a database vs simply keeping your data in files (for example Excel of CSV files). 
-
-[Storage Options for a VM, and transfer back to you](../topics/moving_data/Five_storage_options_for_cloud_vm_to_local_file-date_sharing.drawio.png) 
 
 
 
@@ -36,17 +34,13 @@ A [Comparison of Databases and storage](../topics/storage_vs_databases.md) may h
 
 - We did this in the first session, but if you want to work through this again for complete exercises in [Creating Azure Cloud Storage Accounts](../exercises/exercise_create_storage_account.md) to create and use storage.  
 
-
 - Exercise: [Azure Storage Pricing](../exercises/storage_pricing_exercise.md) 
 
 - Exercise: [Create an SMB Azure file share and connect it to a Windows VM using the Azure portal]https://learn.microsoft.com/en-us/azure/storage/files/storage-files-quick-create-use-windows]
 
 
-
 ## Readings
 
-
-- Not a bad, high-level introduction : [Edureka Azure Storage Tutorial](https://www.edureka.co/blog/azure-storage-tutorial/)  (there are several pop-ups and ads, but it's a good level of of information )
 - [Storage as a Service](https://s3.us-east-2.amazonaws.com/a-book/storage.html) from "Cloud Computing for Science and Engineering"  
 - Azure Documentation: [Introduction to the core Azure Storage services](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)  
 - [Table of Azure Storage Product Offerings](https://azure.microsoft.com/en-us/product-categories/storage/)
