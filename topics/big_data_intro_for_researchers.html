@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overview of Big Data with Spark for Researchers</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:100,400,500,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Roboto'; font-weight: 400;}
+      h1 {
+        font-family: 'Roboto';
+        font-weight: 100;
+        font-size: 40px !important;
+      }
+      h2, h3 {
+        font-family: 'Roboto';
+        font-weight: 500;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-container { background-color: lightblue}
+
+      .cloudtitle { background-image: url('../img/chuttersnap-9AqIdzEc9pY-unsplash.jpg');
+          background-repeat:no-repeat;
+          background-size:contain;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <textarea id="source">
+
+
+class: cloudtitle,center, middle
+
+# Overview of Big Data with Spark for For Researchers
+ 
+### Pat Bills, MSU ICER, October 2023
+
+for the MSU Cloud Computing Fellowship [Session 5](../session_big_data)
+
+---
+
+# Why are we talking about Data and not cloud?  
+
+*this is not the "Data Fellowship"*
+
+- we all have data to deal with
+- a common research struggle is working with data too large for your machine. 
+- Big data tools can offer a solution
+- cloud computing offers Big Data tools "as a service"
+  - without cloud these systems require a collection of hards, a month of installation, infrastructure expertise
+- Big data tools are becoming commonplace for data science
+- Potential gateway to whole new realm of solutions for parallelizing your work
+
+
+![binary Heart](../img/alexander-sinn-KgLtFCgfC28-unsplash.jpg)
+*Image by Alexander Sinn on Unsplash*
+
+---
+
+# Why are we talking about Data and not cloud?  
+
+- is it applicable to every problem?  no. 
+- do you need to use big data for your project?  no.  
+- is it worth learning at least the principles.  yes, similar to cloud computing
+- for some of your research this could be a game-changer
+- **Session Goal:** understand the principles, and some idea of what's involved to deploy and use
+
+---
+
+# Ways that our data can be 'too big' 
+
+- not enough storage space - doessn't fit on disk
+- not enough workspace -  can't fit into memory
+- not enough time - calculations or combinatorial work too slow
+
+Doug Laney in 2001 and [Gartner 2011](https://www.gartner.com/en/information-technology/glossary/big-data) define "Big Data" as having one of 
+
+ - **Volume**:  too much data to house or process using commodity hardware and software. 
+ - **Velocity**:  new data arrive too quickly to manage or analyze or analysis 
+ - **Variety**:  so much variation in data records or too many diverse sources, e.g. not rigidly structured.  
+
+
+---
+
+# Some solutions to the 'too big for machine' problem
+
+<img src="../img/smallbox_bigcat.jpg" width="250px" align="right">
+
+**why couldn't I just just get a bigger box ? **
+
+
+Cost for large VM does not go up linearly and these are expensive: 
+
+- high memory 
+- many-core count (e.g. use your language built-in parallel methods)
+- large disk systems to attach to the VM 
+- your time to configure/setup is valuable
+
+---
+# Some solutions to the 'too big for machine' problem
+
+Take smaller bites
+
+- split the data up and work with some at time
+- work with only the most interesting subset
+- use a data system such as a Relational Database Server
+- use a tool that combines these techniques
+
+---
+# Parallel Data Analysis
+
+- dividing up work and process concurrently is the core of what these tools do
+- parallel techniquees are important even for storage: 
+   - storing data across hundreds of disks. 
+- there are othre forms of parallel computing but that's beyond the scope, e.g. HPC 
+
+---
+# DIY Parallelism 
+
+ - so-called "Data parallelism" using the "split-apply-combine" strategy
+ - labor intensive:
+   - manage data & partitions
+   - manage worker machines
+   - coordinate (orchestration)
+   - handle failures
+ - for really BIG DATA may not be possible 
+
+<img src="../img/split-apply-combine-daigram.png" width="400px">
+
+
+---
+
+# DIY Parallelism Recipe
+
+- adapt your code to process partitions
+  - e.g. given subset of row numbers, reads in just rows andd calculate summaries 
+- create an index of partitions (eg. each partition could have a lits of the row numbers)
+- create a new machine for each parallel worker you want to use, copy the software to each
+- for each partition 
+  - send the partition index to one of the workers, 
+  - or have the worker check which piece needs doing next
+  - the worker reads and processes the rows it was given, then writes an output file (output01.txt)
+  - until all partitions are processed
+- combine all of the output files into one complete output file
+
+---
+
+# Big Data Tools: what's the big deal?
+
+### innovations: 
+- optimize data movement in network
+- data partitioned across machines, operate data near machine
+- works on "commodity hardware" not expensive HPC
+- open source => democratized
+
+---
+
+# Big Data Tools Ecosystem
+
+The history of big data tools starts at Google, who published papers on thier systms, and others 
+who create open source software projects based on those papers, an other academic groups (e.g. Amplab Stanford)
+
+The history is not important, just common "big data" terms: 
+
+ - "Map Reduce" algorithm publication by Jeff Dean/Google based on their distributed file system   
+ - "Hadoop" was the first implementation of MapReduce. Still widely used in businesses
+ - "HDFS" cluster file system invented with Hadoop, and required for Hadoop to use
+ - "Apache Spark" project general purpose, not limited to MapReduce, doesn't require HDFS, multi-language
+
+---
+
+# Spark : "Unified analytics engine" 
+
+- general purpose parallel storage and execution system
+- within a Spark system you set up data sources, clusters of computing, and run special versions of libraries designed for parallel exectution
+- can work with several storage systems including cloud storage
+- you provide the code, Spark evaluates and forms a parallel execution plan
+- automatically partitions the data, and can automatically 
+- code can be R, Python,  SQL, or Scala (a version of Java)
+- you can interact using Notebook, or with a remote connection
+
+![Sorting with Spark from theRinSpark](../img/example_spark_operation_smaller.png)<br>
+*Sorting distributed data with Apache Spark, from Mastering Spark with R*
+
+
+---
+
+# DataBricks == Spark "Pro"
+
+- Databricks **company** started by Spark inventors
+- Databricks **product** packages Spark with robust web interface and connections 
+- Azure Databricks **service** easy to deploy databricks with all details taken care of for you
+  - there are similar versions for AWS and Google Cloud
+- Has a really convenient web and notebook interface for immediate and interactive cluster computing
+- To use Spark,  you first need to build a cluster of computers and install it
+- Databricks is parent service that runs a web interface from you which you can create clusters on demand
+- Takes care of creating & configuring all Azure resources  
+
+---
+
+# Databricks Introduction Video
+
+Two videos linked Link to Video introduction and walk through from Doug Krum, MSU IT Services Data Architect in our session
+
+![Azure Data Bricks Architecture](../img/databricks_arch.jpg)
+
+
+---
+
+# Notes on Using Databricks
+
+- Designed for one Databricks for many users:
+  - an IT Administrator sets up the service for users to log-in and use (data analysts) could log-in and use the service
+  - we can still use it on as a single researcher for interactive work
+- This is the first "platform as a service" system
+  - all resources are created and destroy automatically  for you
+  - creates a special resource group Databricks uses to put resources
+  - if you are not use it for computation, there are no VMs & Disks hanging around
+
+ 
+---
+
+# Do you really _need_ a big data tool?
+
+#### Big data tools can work magic on huge datasets, but require: 
+- significant resources to build and to start-up a cluster. e.g.'overhead' 
+- learning a new method of programming to take advantage of their parallel functions. 
+
+#### Other options for [Azure Analytics](https://azure.microsoft.com/en-us/product-categories/analytics/):
+- relational database managment systems (RDBMS) were designed to proceess millions of rows of tabular data in seconds with very small memory.  
+  - Azure offers several open source RDBMS systems
+  - There are database 'engines' you can use on your laptop without the cloud, specifically SQLite and DuckDB, both possible to use in R and Python (and many other languages. ) 
+  - Requires learning SQL and adding code to connect or use the database in your workflow
+- VM 'scale sets' : launch dozens of identical VMS from an image
+- Azure Batch:  build a pool of works from a container
+      - has a management tool called "ship yard"
+      - could build and run a DIY spark cluster on this
+  - HPC in the cloud : cycle cloud
+- Azure "cosmos db" - you pay by the query, it's already setup and ready to process data`
+  
+---
+
+# Recap  <img src="https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1613111770/hevo-learn/spark_logo.png" width="100" align="right">  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyIiBoZWlnaHQ9IjIyIiB2aWV3Qm94PSIwIDAgMTMyIDIyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xOC4zMTc2IDkuMjc0NzlMOS42ODY2MyAxNC4xMzM5TDAuNDQ0NTExIDguOTQyMjNMMCA5LjE4MjQxVjEyLjk1MTVMOS42ODY2MyAxOC4zODMzTDE4LjMxNzYgMTMuNTQyN1YxNS41MzgxTDkuNjg2NjMgMjAuMzk3MkwwLjQ0NDUxMSAxNS4yMDU1TDAgMTUuNDQ1N1YxNi4wOTIzTDkuNjg2NjMgMjEuNTI0MkwxOS4zNTQ3IDE2LjA5MjNWMTIuMzIzM0wxOC45MTAyIDEyLjA4MzFMOS42ODY2MyAxNy4yNTYzTDEuMDM3MTkgMTIuNDE1N1YxMC40MjAzTDkuNjg2NjMgMTUuMjYwOUwxOS4zNTQ3IDkuODI5MDZWNi4xMTU0NUwxOC44NzMyIDUuODM4MzFMOS42ODY2MyAxMC45OTNMMS40ODE3IDYuNDExMDZMOS42ODY2MyAxLjgxMDYxTDE2LjQyODQgNS41OTgxM0wxNy4wMjExIDUuMjY1NTdWNC44MDM2N0w5LjY4NjYzIDAuNjgzNTk0TDAgNi4xMTU0NVY2LjcwNjY3TDkuNjg2NjMgMTIuMTM4NUwxOC4zMTc2IDcuMjc5NDJWOS4yNzQ3OVoiIGZpbGw9IiNFRTNEMkMiPjwvcGF0aD48cGF0aCBkPSJNMzcuNDQ5IDE4LjQ0MjdWMS44NTE1NkgzNC44OTMxVjguMDU5NEMzNC44OTMxIDguMTUxNzcgMzQuODM3NSA4LjIyNTY4IDM0Ljc0NDkgOC4yNjI2M0MzNC42NTIzIDguMjk5NTggMzQuNTU5NyA4LjI2MjYzIDM0LjUwNDEgOC4yMDcyQzMzLjYzMzYgNy4xOTEwNCAzMi4yODE2IDYuNjE4MjkgMzAuNzk5OSA2LjYxODI5QzI3LjYzMjcgNi42MTgyOSAyNS4xNTA5IDkuMjc4NzkgMjUuMTUwOSAxMi42NzgzQzI1LjE1MDkgMTQuMzQxMSAyNS43MjUgMTUuODc0NiAyNi43ODA4IDE3LjAwMTZDMjcuODM2NSAxOC4xMjg3IDI5LjI2MjYgMTguNzM4MyAzMC43OTk5IDE4LjczODNDMzIuMjYzMSAxOC43MzgzIDMzLjYxNTEgMTguMTI4NyAzNC41MDQxIDE3LjA3NTVDMzQuNTU5NyAxNy4wMDE2IDM0LjY3MDggMTYuOTgzMiAzNC43NDQ5IDE3LjAwMTZDMzQuODM3NSAxNy4wMzg2IDM0Ljg5MzEgMTcuMTEyNSAzNC44OTMxIDE3LjIwNDlWMTguNDQyN0gzNy40NDlaTTMxLjM1NTUgMTYuNDI4OUMyOS4zMTgyIDE2LjQyODkgMjcuNzI1MyAxNC43ODQ1IDI3LjcyNTMgMTIuNjc4M0MyNy43MjUzIDEwLjU3MjEgMjkuMzE4MiA4LjkyNzc1IDMxLjM1NTUgOC45Mjc3NUMzMy4zOTI4IDguOTI3NzUgMzQuOTg1NyAxMC41NzIxIDM0Ljk4NTcgMTIuNjc4M0MzNC45ODU3IDE0Ljc4NDUgMzMuMzkyOCAxNi40Mjg5IDMxLjM1NTUgMTYuNDI4OVoiIGZpbGw9ImJsYWNrIj48L3BhdGg+PHBhdGggZD0iTTUxLjExOCAxOC40NDM1VjYuODk2Mkg0OC41ODA2VjguMDYwMTdDNDguNTgwNiA4LjE1MjU0IDQ4LjUyNSA4LjIyNjQ1IDQ4LjQzMjQgOC4yNjM0QzQ4LjMzOTggOC4zMDAzNSA0OC4yNDcyIDguMjYzNCA0OC4xOTE2IDguMTg5NUM0Ny4zMzk3IDcuMTczMzMgNDYuMDA2MSA2LjYwMDU5IDQ0LjQ4NzQgNi42MDA1OUM0MS4zMjAyIDYuNjAwNTkgMzguODM4NCA5LjI2MTA5IDM4LjgzODQgMTIuNjYwNkMzOC44Mzg0IDE2LjA2MDEgNDEuMzIwMiAxOC43MjA2IDQ0LjQ4NzQgMTguNzIwNkM0NS45NTA2IDE4LjcyMDYgNDcuMzAyNiAxOC4xMTA5IDQ4LjE5MTYgMTcuMDM5NEM0OC4yNDcyIDE2Ljk2NTUgNDguMzU4MyAxNi45NDcgNDguNDMyNCAxNi45NjU1QzQ4LjUyNSAxNy4wMDI0IDQ4LjU4MDYgMTcuMDc2MyA0OC41ODA2IDE3LjE2ODdWMTguNDI1SDUxLjExOFYxOC40NDM1Wk00NS4wNjE1IDE2LjQyOTdDNDMuMDI0MiAxNi40Mjk3IDQxLjQzMTQgMTQuNzg1MyA0MS40MzE0IDEyLjY3OTFDNDEuNDMxNCAxMC41NzI5IDQzLjAyNDIgOC45Mjg1MiA0NS4wNjE1IDguOTI4NTJDNDcuMDk4OSA4LjkyODUyIDQ4LjY5MTcgMTAuNTcyOSA0OC42OTE3IDEyLjY3OTFDNDguNjkxNyAxNC43ODUzIDQ3LjA5ODkgMTYuNDI5NyA0NS4wNjE1IDE2LjQyOTdaIiBmaWxsPSJibGFjayI+PC9wYXRoPjxwYXRoIGQ9Ik03Mi44NDI2IDE4LjQ0MzVWNi44OTYySDcwLjMwNTJWOC4wNjAxN0M3MC4zMDUyIDguMTUyNTQgNzAuMjQ5NiA4LjIyNjQ1IDcwLjE1NyA4LjI2MzRDNzAuMDY0NCA4LjMwMDM1IDY5Ljk3MTggOC4yNjM0IDY5LjkxNjIgOC4xODk1QzY5LjA2NDMgNy4xNzMzMyA2Ny43MzA3IDYuNjAwNTkgNjYuMjEyIDYuNjAwNTlDNjMuMDI2MyA2LjYwMDU5IDYwLjU2MyA5LjI2MTA5IDYwLjU2MyAxMi42NzkxQzYwLjU2MyAxNi4wOTcxIDYzLjA0NDggMTguNzM5MSA2Ni4yMTIgMTguNzM5MUM2Ny42NzUyIDE4LjczOTEgNjkuMDI3MiAxOC4xMjk0IDY5LjkxNjIgMTcuMDU3OEM2OS45NzE4IDE2Ljk4MzkgNzAuMDgyOSAxNi45NjU1IDcwLjE1NyAxNi45ODM5QzcwLjI0OTYgMTcuMDIwOSA3MC4zMDUyIDE3LjA5NDggNzAuMzA1MiAxNy4xODcyVjE4LjQ0MzVINzIuODQyNlpNNjYuNzg2MSAxNi40Mjk3QzY0Ljc0ODggMTYuNDI5NyA2My4xNTYgMTQuNzg1MyA2My4xNTYgMTIuNjc5MUM2My4xNTYgMTAuNTcyOSA2NC43NDg4IDguOTI4NTIgNjYuNzg2MSA4LjkyODUyQzY4LjgyMzUgOC45Mjg1MiA3MC40MTYzIDEwLjU3MjkgNzAuNDE2MyAxMi42NzkxQzcwLjQxNjMgMTQuNzg1MyA2OC44MjM1IDE2LjQyOTcgNjYuNzg2MSAxNi40Mjk3WiIgZmlsbD0iYmxhY2siPjwvcGF0aD48cGF0aCBkPSJNNzcuNDkyMiAxNy4wNzU1Qzc3LjUxMDcgMTcuMDc1NSA3Ny41NDc4IDE3LjA1NzEgNzcuNTY2MyAxNy4wNTcxQzc3LjYyMTggMTcuMDU3MSA3Ny42OTU5IDE3LjA5NCA3Ny43MzMgMTcuMTMxQzc4LjYwMzUgMTguMTQ3MSA3OS45NTU1IDE4LjcxOTkgODEuNDM3MiAxOC43MTk5Qzg0LjYwNDQgMTguNzE5OSA4Ny4wODYyIDE2LjA1OTQgODcuMDg2MiAxMi42NTk4Qzg3LjA4NjIgMTAuOTk3IDg2LjUxMjEgOS40NjM1NSA4NS40NTY0IDguMzM2NTNDODQuNDAwNiA3LjIwOTUxIDgyLjk3NDUgNi41OTk4MiA4MS40MzcyIDYuNTk5ODJDNzkuOTc0MSA2LjU5OTgyIDc4LjYyMiA3LjIwOTUxIDc3LjczMyA4LjI2MjYzQzc3LjY3NzQgOC4zMzY1MyA3Ny41ODQ4IDguMzU1MDEgNzcuNDkyMiA4LjMzNjUzQzc3LjM5OTYgOC4yOTk1OCA3Ny4zNDQgOC4yMjU2OCA3Ny4zNDQgOC4xMzMzVjEuODUxNTZINzQuNzg4MVYxOC40NDI3SDc3LjM0NFYxNy4yNzg4Qzc3LjM0NCAxNy4xODY0IDc3LjM5OTYgMTcuMTEyNSA3Ny40OTIyIDE3LjA3NTVaTTc3LjIzMjkgMTIuNjc4M0M3Ny4yMzI5IDEwLjU3MjEgNzguODI1NyA4LjkyNzc1IDgwLjg2MzEgOC45Mjc3NUM4Mi45MDA0IDguOTI3NzUgODQuNDkzMiAxMC41NzIxIDg0LjQ5MzIgMTIuNjc4M0M4NC40OTMyIDE0Ljc4NDUgODIuOTAwNCAxNi40Mjg5IDgwLjg2MzEgMTYuNDI4OUM3OC44MjU3IDE2LjQyODkgNzcuMjMyOSAxNC43NjYxIDc3LjIzMjkgMTIuNjc4M1oiIGZpbGw9ImJsYWNrIj48L3BhdGg+PHBhdGggZD0iTTk0LjQ3NjYgOS4yNjMyOEM5NC43MTczIDkuMjYzMjggOTQuOTM5NiA5LjI4MTc1IDk1LjA4NzggOS4zMTg3VjYuNjk1MTVDOTQuOTk1MSA2LjY3NjY4IDk0LjgyODUgNi42NTgyIDk0LjY2MTggNi42NTgyQzkzLjMyODIgNi42NTgyIDkyLjEwNTggNy4zNDE4IDkxLjQ1NzYgOC40MzE4N0M5MS40MDIgOC41MjQyNSA5MS4zMDk0IDguNTYxMiA5MS4yMTY4IDguNTI0MjVDOTEuMTI0MiA4LjUwNTc3IDkxLjA1MDEgOC40MTMzOSA5MS4wNTAxIDguMzIxMDJWNi44OTgzOUg4OC41MTI3VjE4LjQ2NDJIOTEuMDY4NlYxMy4zNjQ5QzkxLjA2ODYgMTAuODMzNyA5Mi4zNjUxIDkuMjYzMjggOTQuNDc2NiA5LjI2MzI4WiIgZmlsbD0iYmxhY2siPjwvcGF0aD48cGF0aCBkPSJNOTkuMjkxNyA2Ljg5NzQ2SDk2LjY5ODdWMTguNDYzMkg5OS4yOTE3VjYuODk3NDZaIiBmaWxsPSJibGFjayI+PC9wYXRoPjxwYXRoIGQ9Ik05Ny45NTc2IDEuODcwMTJDOTcuMDg3MSAxLjg3MDEyIDk2LjM4MzMgMi41NzIxOSA5Ni4zODMzIDMuNDQwNTVDOTYuMzgzMyA0LjMwODkxIDk3LjA4NzEgNS4wMTA5OSA5Ny45NTc2IDUuMDEwOTlDOTguODI4MSA1LjAxMDk5IDk5LjUzMTkgNC4zMDg5MSA5OS41MzE5IDMuNDQwNTVDOTkuNTMxOSAyLjU3MjE5IDk4LjgyODEgMS44NzAxMiA5Ny45NTc2IDEuODcwMTJaIiBmaWxsPSJibGFjayI+PC9wYXRoPjxwYXRoIGQ9Ik0xMDYuODg2IDYuNjAwNTlDMTAzLjMzIDYuNjAwNTkgMTAwLjc1NSA5LjE1MDIzIDEwMC43NTUgMTIuNjc5MUMxMDAuNzU1IDE0LjM5NzMgMTAxLjM2NyAxNS45MzA4IDEwMi40NTkgMTcuMDM5NEMxMDMuNTcxIDE4LjE0NzkgMTA1LjEyNiAxOC43NTc2IDEwNi44NjcgMTguNzU3NkMxMDguMzEyIDE4Ljc1NzYgMTA5LjQyMyAxOC40ODA1IDExMS41MzUgMTYuOTI4NUwxMTAuMDcyIDE1LjM5NUMxMDkuMDM0IDE2LjA3ODYgMTA4LjA3MSAxNi40MTEyIDEwNy4xMjcgMTYuNDExMkMxMDQuOTc4IDE2LjQxMTIgMTAzLjM2NyAxNC44MDM4IDEwMy4zNjcgMTIuNjc5MUMxMDMuMzY3IDEwLjU1NDQgMTA0Ljk3OCA4Ljk0NyAxMDcuMTI3IDguOTQ3QzEwOC4xNDUgOC45NDcgMTA5LjA5IDkuMjc5NTYgMTEwLjAzNSA5Ljk2MzE2TDExMS42NjQgOC40Mjk2OEMxMDkuNzU3IDYuODAzODIgMTA4LjAzNCA2LjYwMDU5IDEwNi44ODYgNi42MDA1OVoiIGZpbGw9ImJsYWNrIj48L3BhdGg+PHBhdGggZD0iTTExNi4wMzUgMTMuMzYyQzExNi4wNzIgMTMuMzI1IDExNi4xMjggMTMuMzA2NiAxMTYuMTg0IDEzLjMwNjZIMTE2LjIwMkMxMTYuMjU4IDEzLjMwNjYgMTE2LjMxMyAxMy4zNDM1IDExNi4zNjkgMTMuMzgwNUwxMjAuNDYyIDE4LjQ0MjhIMTIzLjYxMUwxMTguMzE0IDEyLjA1MDJDMTE4LjIzOSAxMS45NTc4IDExOC4yMzkgMTEuODI4NSAxMTguMzMyIDExLjc1NDZMMTIzLjIwMyA2Ljg5NTUxSDEyMC4wNzNMMTE1Ljg2OSAxMS4xMDhDMTE1LjgxMyAxMS4xNjM0IDExNS43MjEgMTEuMTgxOSAxMTUuNjI4IDExLjE2MzRDMTE1LjU1NCAxMS4xMjY0IDExNS40OTggMTEuMDUyNSAxMTUuNDk4IDEwLjk2MDJWMS44NzAxMkgxMTIuOTI0VjE4LjQ2MTNIMTE1LjQ4VjEzLjk1MzJDMTE1LjQ4IDEzLjg5NzggMTE1LjQ5OCAxMy44MjM5IDExNS41NTQgMTMuNzg2OUwxMTYuMDM1IDEzLjM2MloiIGZpbGw9ImJsYWNrIj48L3BhdGg+PHBhdGggZD0iTTEyNy43NzYgMTguNzM5QzEyOS44NjkgMTguNzM5IDEzMS45OTkgMTcuNDY0MiAxMzEuOTk5IDE1LjA0MzlDMTMxLjk5OSAxMy40NTUgMTMwLjk5OSAxMi4zNjQ5IDEyOC45NjIgMTEuNjk5OEwxMjcuNTcyIDExLjIzNzlDMTI2LjYyOCAxMC45MjM4IDEyNi4xODMgMTAuNDgwNCAxMjYuMTgzIDkuODcwN0MxMjYuMTgzIDkuMTY4NjMgMTI2LjgxMyA4LjY4ODI2IDEyNy43MDIgOC42ODgyNkMxMjguNTU0IDguNjg4MjYgMTI5LjMxMyA5LjI0MjUzIDEyOS43OTUgMTAuMjAzM0wxMzEuODUxIDkuMDk0NzNDMTMxLjA5MiA3LjU0Mjc3IDEyOS41MTcgNi41ODIwMyAxMjcuNzAyIDYuNTgyMDNDMTI1LjQwNSA2LjU4MjAzIDEyMy43MzkgOC4wNjAwOSAxMjMuNzM5IDEwLjA3MzlDMTIzLjczOSAxMS42ODEzIDEyNC43MDIgMTIuNzUyOSAxMjYuNjgzIDEzLjM4MTFMMTI4LjExIDEzLjg0M0MxMjkuMTEgMTQuMTU3MSAxMjkuNTM2IDE0LjU2MzUgMTI5LjUzNiAxNS4yMTAyQzEyOS41MzYgMTYuMTg5NCAxMjguNjI4IDE2LjU0MDQgMTI3Ljg1IDE2LjU0MDRDMTI2LjgxMyAxNi41NDA0IDEyNS44ODcgMTUuODc1MyAxMjUuNDQzIDE0Ljc4NTJMMTIzLjM1IDE1Ljg5MzhDMTI0LjAzNSAxNy42NDkgMTI1LjcyIDE4LjczOSAxMjcuNzc2IDE4LjczOVoiIGZpbGw9ImJsYWNrIj48L3BhdGg+PHBhdGggZD0iTTU4LjIzMDQgMTguNjI4QzU5LjA0NTMgMTguNjI4IDU5Ljc2NzcgMTguNTU0MSA2MC4xNzUxIDE4LjQ5ODZWMTYuMjgxNUM1OS44NDE4IDE2LjMxODUgNTkuMjQ5MSAxNi4zNTU0IDU4Ljg5NzIgMTYuMzU1NEM1Ny44NiAxNi4zNTU0IDU3LjA2MzYgMTYuMTcwNyA1Ny4wNjM2IDEzLjkzNTFWOS4xODY4N0M1Ny4wNjM2IDkuMDU3NTQgNTcuMTU2MiA4Ljk2NTE3IDU3LjI4NTggOC45NjUxN0g1OS43ODYyVjYuODc3NDFINTcuMjg1OEM1Ny4xNTYyIDYuODc3NDEgNTcuMDYzNiA2Ljc4NTAzIDU3LjA2MzYgNi42NTU3VjMuMzMwMDhINTQuNTA3NlY2LjY3NDE4QzU0LjUwNzYgNi44MDM1MSA1NC40MTUgNi44OTU4OSA1NC4yODU0IDYuODk1ODlINTIuNTA3M1Y4Ljk4MzY0SDU0LjI4NTRDNTQuNDE1IDguOTgzNjQgNTQuNTA3NiA5LjA3NjAyIDU0LjUwNzYgOS4yMDUzNVYxNC41ODE4QzU0LjUwNzYgMTguNjI4IDU3LjIxMTcgMTguNjI4IDU4LjIzMDQgMTguNjI4WiIgZmlsbD0iYmxhY2siPjwvcGF0aD48L3N2Zz4=" align="right">
+
+- Big Data is an attempt to solve the problem of analyzing data bigger than one machine by harnessing a 'cluster' of machines to parallelize storage and processing of huge datasets across the 'workers' (machines) in a cluster.  In the cloud these are VMs. 
+Note this is not the same as an HPC cluster.  
+
+- Spark is an open source 'big data' system for creating and using clusters to analyze data with different programming languages 
+(Python, R, SQL and "scala" which is a form of the Java language).    Spark has a library of special functions 
+to automatically parallelize (split up) the work on the cluster for you.  Spark was invented at Stanford and is an open source product: https://spark.apache.org
+
+- The Spark inventors created a company and product "DataBricks" that adds features and ease of use: https://www.databricks.com/spark/comparing-databricks-to-apache-spark
+  
+- Both AWS and Azure have a database service that is nearly identical to run a databricks workspace and cluster very easily, providing a single platform for databricks and other cloud services, 
+and one point of billing and contract (essential for private companies). Otherwise we'd need a data center and IT staff to create a databricks system. 
+
+- there are many options for analyzing data in the cloud that don't have "big" in the name but are nonetheless amazing
+
+- Cloud computing makes big data accessible to all of us. 
+
+
+---
+
+# Questions?
+
+
+![small box big cat](../img/smallbox_bigcat.jpg)
+
+---
+
+
+    </textarea>
+    <script src="../js/remark-latest.min.js">
+
+    <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js"> -->
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
