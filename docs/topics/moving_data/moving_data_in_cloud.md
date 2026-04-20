@@ -5,7 +5,7 @@
 
 
 # Excercises
-# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 - [Exercise: moving data using storage URL](moving_data_with_url_activity.md)
 - [Attaching **Azure Files** to a Virtual machine for reading and writing data](../../exercises/exercise_windows_filestorage.md)

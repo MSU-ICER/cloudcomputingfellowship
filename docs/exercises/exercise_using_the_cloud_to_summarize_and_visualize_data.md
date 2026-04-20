@@ -2,7 +2,7 @@
 title: Session 3 exercise - analyzing data on a VM
 ---
 # Exercise: using the cloud to summarize and visualize data. 
-# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 ## Overview
 

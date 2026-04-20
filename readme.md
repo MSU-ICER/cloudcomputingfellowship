@@ -1,6 +1,8 @@
-## Website for the MSU Computing CloudFellowship
+## Website for the 2023-24 MSU Cloud Computing Fellowship
 
-Website: https://msu-icer.github.io/cloudcomputingfellowship/
+~~Website: https://msu-icer.github.io/cloudcomputingfellowship/~~
+
+This site is archived.  See https://icer.msu.edu/cloud-computing for the current website. 
 
 This is the source code for the building the website and materials for the 2023-2024 MSU Cloud Computing Fellowship, used by the fellowship organizers.   Students do not need to use this source code, simply visit the site above.  
 

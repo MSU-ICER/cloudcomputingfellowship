@@ -1,5 +1,5 @@
 # What is a Server?   An Exercise
-# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 The client/server model of computing is so ubiquitous that we don't think of it is one of several models to choose from.   
 The internet and the web uses this client server model.  Your web browser is the client, and someone running a website is using a server. 

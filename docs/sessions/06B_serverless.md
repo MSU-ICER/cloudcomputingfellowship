@@ -3,7 +3,7 @@ title: 6B - Serverless
 ---
 
 # Session 6(B): Serverless, Containers, and Functions as a Service (FaaS)
-# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 ![example cloud architecture](../img/serverless/geneplexus_cloud_diagram.png)
 *example real-world cloud application*

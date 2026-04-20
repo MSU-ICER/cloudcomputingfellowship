@@ -6,8 +6,8 @@ title: Syllabus
 *from [John Constable](https://en.wikipedia.org/wiki/John_Constable), Cloud Studies, 19th Century English painter*
 
 <hr>
-# **MSU Cloud Computing Fellowship** 
-# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
+# **2023-24 MSU Cloud Computing Fellowship** 
+## ARCHIVE: see current website <br /> https://icer.msu.edu/cloud-computing
 
 ## Program Summary
 
