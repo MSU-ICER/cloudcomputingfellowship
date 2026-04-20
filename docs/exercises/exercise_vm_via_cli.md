@@ -71,7 +71,6 @@ you see `<mygroupname>` put in your actual resource group name.
 
 ```bash
 # create a VM and all of the items needed for it  : OS Disk, network security group, etc.  
-# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 # replace the names with your own group and other names.  
 # Remember to change the group and VM name
 
