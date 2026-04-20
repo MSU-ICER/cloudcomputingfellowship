@@ -1,4 +1,5 @@
 # Intro to Cloud Costs on Azure
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 You've heard us say that nearly everything Azure has a cost, but how can you tell how much? 
 

@@ -1,4 +1,5 @@
 # Exercise: Creating a Windows Virtual Machine (VM)
+## ARCHIVE: see current website <br> https://icer.msu.edu/cloud-computing
 
 This is a previous version of a windows-only VM walk through from 2020, kep for historical reasons
 

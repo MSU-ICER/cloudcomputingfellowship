@@ -3,6 +3,7 @@ title: 7 - AI APIs
 ---
 
 # Azure AI Services and APIs
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 ## What is AI? 
 

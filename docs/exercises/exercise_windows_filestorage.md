@@ -2,6 +2,7 @@
 title: Exercise: Create an SMB Azure file share and connect it to a Windows VM using the Azure portal
 ---
 # Exercise: Using File Storage with Windows VM
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 ## Overview
 

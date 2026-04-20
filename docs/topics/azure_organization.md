@@ -1,4 +1,5 @@
 # Azure Organization
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 *This is a brief description of how Azure cloud services are organized for those just getting started with Azure.  It's my own take on this topic written with researchers in mind.  However it should not replace Azure official documentation.  The link below has a great summary of how it's setup.  However you may ignore all the other sections in the "Azure setup guide" as this is geared for IT professionals adoption cloud for their own organization*
 

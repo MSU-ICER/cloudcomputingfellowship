@@ -3,6 +3,7 @@ title: 3 - Cloud Storage
 ---
 
 # Session 3: Cloud Storage
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 ![storage_units](../img/storage_units.jpg)
 

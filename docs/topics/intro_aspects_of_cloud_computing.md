@@ -1,4 +1,5 @@
 # Nature of Cloud Computing
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 ## Some Motivation at Amazon.com
 - Massive IT infrastructure supports  the Amazon store and company <!-- developers, accounting, sales, testing, administration, etc -->

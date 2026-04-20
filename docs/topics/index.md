@@ -2,6 +2,7 @@
 title: Topic Index
 ---
 # Short Topics for the Cloud Computing Fellowship
+## ARCHIVE: see current website <br />https://icer.msu.edu/cloud-computing
 
 These topics are introduced in the sessions in the [syllabus](../index.md).  This is an index of all the topics here to help you find them outside of lessons.  They are not in any particular order, but aggregated here in an effort to help you find them.  
 
