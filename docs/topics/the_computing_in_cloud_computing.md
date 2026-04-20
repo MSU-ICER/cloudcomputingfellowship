@@ -2,6 +2,7 @@
 title: The Computing in Cloud Computing
 ---
 # Helping to Understand the "computing" in cloud computing
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 ![](../img/header_image_old_corp_network_diagram.jpg)
 

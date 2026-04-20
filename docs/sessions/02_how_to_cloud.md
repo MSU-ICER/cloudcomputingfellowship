@@ -3,6 +3,7 @@ title: 2 - How to Cloud
 ---
 
 # Session 2: What is the cloud and how does it work?  An introduction using storage and virtual machines
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 ### About this Session
 

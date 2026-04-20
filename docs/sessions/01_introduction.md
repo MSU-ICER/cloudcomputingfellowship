@@ -3,6 +3,7 @@ title: 1 - Introduction
 ---
 
 # Introducing the MSU Cloud Computing Fellowship
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 <figure markdown>
   ![Rosie facing an Atlantic Ocean storm animation](../img/rosie_facing_the_atlantic_clouds_psbills_2021.gif)

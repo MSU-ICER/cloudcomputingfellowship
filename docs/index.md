@@ -7,6 +7,7 @@ title: Syllabus
 
 <hr>
 # **MSU Cloud Computing Fellowship** 
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 ## Program Summary
 

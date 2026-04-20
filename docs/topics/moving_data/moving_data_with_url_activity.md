@@ -1,4 +1,5 @@
 # Exercise: moving data using storage URL
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 The goal of the exercise is to show one of the many ways of get data out of your cloud storage account, 
 especially as way to share a file using a URL

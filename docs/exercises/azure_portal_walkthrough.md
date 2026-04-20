@@ -3,6 +3,7 @@ title: Azure Portal Walk-through
 ---
 
 # Exercise: Azure Portal Walk-through and Storage account creation
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 from **MSU Cloud Computing Fellowship [Session 1](../sessions/01_introduction.md)**  
 

@@ -1,4 +1,5 @@
 # Monitoring Cloud Resources in Azure
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 You want to keep an eye on the resources you create: how healthy are they, are they performing as expected?  Is there some problem that makes them slow or unresponsive?  This is especially true of servers, created by IT staff, that others are using that need to stay up and running.    For us as researchers creating resources to do our calculations, we want to know how long it's taking and hence how much will it cost?  Do we need to add more power to get it to work?   
 

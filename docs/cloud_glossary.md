@@ -1,4 +1,5 @@
 # Glossary of Cloud Terms
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 ## Why?
 

@@ -2,6 +2,7 @@
 title: Setting up Budget Alerts
 ---
 # MSU Cloud Computing Fellowship: Costs and Budgets with Microsoft Azure
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 (Almost) everything you do in Azure has a cost, and costs for resources often acrue over time, wether the resource is in use or not.   This is a 
 short excercise to recieve an email when you have spent a certain amount of money.   This can be valuable if you are experimenting and forget to 

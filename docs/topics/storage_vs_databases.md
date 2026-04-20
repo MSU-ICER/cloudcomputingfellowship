@@ -3,6 +3,7 @@ title: Comparing Storage vs Databases
 ---
 
 # Storage vs Databases
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 From [Session 6A. Data Servers](../sessions/06A_data_servers.md)
 

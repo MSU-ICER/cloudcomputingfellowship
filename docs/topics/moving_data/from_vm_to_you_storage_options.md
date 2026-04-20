@@ -5,6 +5,7 @@ hide:
 ---
 
 # Storage and data transfer options for VM
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 *From [Session #3, Cloud Storage](../../sessions/03_cloud_storage.md)*
 
 ## Context

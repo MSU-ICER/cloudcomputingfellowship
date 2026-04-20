@@ -1,4 +1,5 @@
 # Learning how to learn about cloud
+# ARCHIVE: see current website https://icer.msu.edu/cloud-computing
 
 ## Guidelines for Researchers
 
